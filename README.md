@@ -6,3 +6,5 @@ Slide는 아직 위치만 잡아둔 상태입니다
 grid Layout을 이용했습니다
 
 Scroll To Top 화살표를 만들었습니다
+
+grid item1 liveNum에 popAlert창을 
