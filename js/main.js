@@ -43,3 +43,7 @@ window.addEventListener("scroll", function() {
     ? scrollToTopBtn.style.display = 'block'
     : scrollToTopBtn.style.display = 'none'
 })
+// popAlert
+const popAlert = () => {
+    alert('확진 판정을 받은 후 의료기관이나 생활치료센터 등에 격리되어 치료를 받고 있는 환자')
+}

@@ -441,16 +441,26 @@ main .grid-container .item1 .liveNum li .tit {
 main .grid-container .item1 .liveNum li .num {
     font-weight: 400;
     font-size: 30px;
-}
-main .grid-container .item1 .liveNum li .mini {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 26px;
-    vertical-align: middle;
+    letter-spacing: 0.06em;
 }
 main .grid-container .item1 .liveNum li .before {
     font-weight: 400;
     font-size: 13px;
+}
+main .grid-container .item1 .liveNum li .help {
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 100%;
+    right: 15px;
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 5px;
 }
 main .grid-container .item1 .liveNum .sign {
     position: absolute;
@@ -530,6 +540,7 @@ main .grid-container .item2 .graph-detail {
     width: 238px;
     height: 612px;
     box-sizing: border-box;
+    background: white;
 }
 main .grid-container .item2 .graph-detail h3 {
     display: block;
@@ -756,6 +767,7 @@ main .grid-container .item5 .info {
 /* item6 */
 main .grid-container .item6 {
     border-top: 4px solid #164068;
+    background: white;
 }
 main .grid-container .item6 h3 {
     color: #145663;
@@ -800,6 +812,7 @@ main .grid-container .item6 li {
 /* item7 */
 main .grid-container .item7 {
     border-top: 4px solid #164068;
+    background: white;
 }
 main .grid-container .item7 h3 {
     color: #585041;
@@ -884,4 +897,5 @@ main .grid-container .item7 .now-banner .banner-title {
     width: 274px;
     height: 154px;
     margin-right: 17px;
+    cursor: pointer;
 }
