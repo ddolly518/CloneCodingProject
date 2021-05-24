@@ -17,8 +17,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- Google material Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!--main.css 연결 -->
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- 디바이스가 데스크탑일 때 연결할 스타일시트 -->
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)">
+    <!-- 디바이스가 태블릿PC일 때 연결할 스타일시트 -->
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 426px) and (max-width: 1023px)">
+    <!-- 디바이스가 스마트폰일 때 연결할 스타일시트 -->
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 425px)">
     <!-- main.js 연결 -->
     <script defer src="./js/main.js"></script>
 </head>
@@ -29,6 +33,23 @@
             <!-- 헤더 두번째 섹션 -->
             <div class="header-secondary">
                 <a href="/" class="corona">코로나바이러스감염증-19<span>(COVID-19)</span></a>
+                <div h-right>
+                    <ul class="shim">
+                        <li><a href="https://ncv.kdca.go.kr/" target="_blank"><span>코로나19백신 및 예방접종</span></a></li>
+                        <li><a href="http://www.mohw.go.kr/react/index.jsp" target="_blank"><img src="./images/shim.png"><span>중앙사고수습본부</span></a></li>
+                        <li><a href="http://www.kdca.go.kr/index.es?sid=a2" target="_blank"><img src="./images/shim.png"><span>중앙방역대책본부</span></a></li>
+                    </ul>
+                    <ul class="country">
+                        <li><a href="http://ncov.mohw.go.kr/en/" target="_blank">· English</a></li>
+                        <li><a href="http://ncov.mohw.go.kr/cn/" target="_blank">· China</a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="https://www.facebook.com/koreadca" target="_blank"><img src="./images/sns_icon_face.png"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank"><img src="./images/sns_icon_you.png"></a></li>
+                        <li><a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank"><img src="./images/sns_icon_naver.png"></a></li>
+                        <li><a href="https://twitter.com/koreadca" target="_blank"><img src="./images/sns_icon_tw.png"></a></li>
+                    </ul>
+                </div>
             </div>
             <!-- 헤더 첫번째 섹션 -->
             <div class="header-primary">
@@ -41,21 +62,6 @@
                 <div id="btn-close" class="material-icons">
                     close
                 </div>
-                <ul class="shim">
-                    <li><a href="https://ncv.kdca.go.kr/" target="_blank"><img src="./images/shim.png"><span>코로나19백신 및 예방접종</span></a></li>
-                    <li><a href="http://www.mohw.go.kr/react/index.jsp" target="_blank"><img src="./images/shim.png"><span>중앙사고수습본부</span></a></li>
-                    <li><a href="http://www.kdca.go.kr/index.es?sid=a2" target="_blank"><img src="./images/shim.png"><span>중앙방역대책본부</span></a></li>
-                </ul>
-                <ul class="sns">
-                    <li><a href="https://www.facebook.com/koreadca" target="_blank"><img src="./images/sns_icon_face.png"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank"><img src="./images/sns_icon_you.png"></a></li>
-                    <li><a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank"><img src="./images/sns_icon_naver.png"></a></li>
-                    <li><a href="https://twitter.com/koreadca" target="_blank"><img src="./images/sns_icon_tw.png"></a></li>
-                </ul>
-                <ul class="country">
-                    <li><a href="http://ncov.mohw.go.kr/en/" target="_blank">English</a></li>
-                    <li><a href="http://ncov.mohw.go.kr/cn/" target="_blank">China</a></li>
-                </ul>
                 <div class="search">
                     <input placeholder="검색어를 입력하세요.">
                     <span class="material-icons">
@@ -170,7 +176,6 @@
         <img class="btn-scrollToTop" onclick="scrollToTop()" src="./images/scroll.PNG" alt="화살표">
         <!-- LAYOUT -->
         <div class="Layout">
-            <aside id="left"></aside>
             <main>
                 <div id="banner">
                     <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365202"><img src="./images/banner.png"></a>
@@ -327,19 +332,19 @@
                         <h4 class="title1">최신 브리핑</h4>
                         <ul class="title-list">
                             <li>
-                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365202"><span>·</span>수도권 등 2단계 지역은 유흥시설 집합금지</a>
+                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365202"><span>·</span> 수도권 등 2단계 지역은 유흥시설 집합금지</a>
                             </li>
                             <li>
-                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365164"><span>·</span>87일 만에 지역사회 감염 600명대, 4차 유행의 갈림길</a>
+                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365164"><span>·</span> 87일 만에 지역사회 감염 600명대, 4차 유행의 갈림길</a>
                             </li>
                         </ul>
                         <h4 class="title2">핫이슈</h4>
                         <ul class="title-list">
                             <li>
-                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886057&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank"><span>·</span>정부, 현행 거리두기 단계 .5인 이상 모임 금지 3주간 연장</a>
+                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886057&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank"><span>·</span> 정부, 현행 거리두기 단계 .5인 이상 모임 금지 3주간 연장</a>
                             </li>
                             <li>
-                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886038&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank"><span>·</span>일시 보류된 'AZ백신 접종 재게' 여부, 이번 주말 발표</a>
+                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886038&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank"><span>·</span> 일시 보류된 'AZ백신 접종 재게' 여부, 이번 주말 발표</a>
                             </li>
                         </ul>
                     </div>
@@ -348,10 +353,10 @@
                         <h3>코로나19 팩트체크<a href="http://ncov.mohw.go.kr/factBoardList.do?brdId=3&brdGubun=33" class="more">더보기</a></h3>
                         <ul class="title-list">
                             <li>
-                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3467"><span>·</span>[팩트체크] 사회적 거리 두기 3단계 추진 중? 사실이 아닙니다</a>
+                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3467"><span>·</span> [팩트체크] 사회적 거리 두기 3단계 추진 중? 사실이 아닙니다</a>
                             </li>
                             <li>
-                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3466"><span>·</span>[팩트체크] 진단검사량이나 검사결과는 인위적인 조작이 불가능합니다</a>
+                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3466"><span>·</span> [팩트체크] 진단검사량이나 검사결과는 인위적인 조작이 불가능합니다</a>
                             </li>
                         </ul>
                         <div class="now-banner">
@@ -360,20 +365,59 @@
                     </div>
                 </div>
             </main>
-            <aside id="right"></aside>
         </div>
     </section>
     <section id="about">
-        <div class="wrapper">
-            <!-- slider 위치라도 잡아보기 -->
-            <ul class="slider">
-                <li><img src="./images/slide image.jpg"></li>
-                <li><img src="./images/slide image2.jpg"></li>
-                <li><img src="./images/slide image3.jpg"></li>
-                <li><img src="./images/slide image4.jpg"></li>
-                <!-- <li><img src="./images/slide image5.jpg"></li>
-                <li><img src="./images/slide image6.png"></li> -->
-            </ul>
+        <div class="inner">
+            <div id="slider">
+                <!-- 왼쪽 화살표 -->
+                <div class="material-icons arrow-left">
+                    arrow_left
+                </div>
+                <!-- 오른쪽 화살표 -->
+                <div class="material-icons arrow-right">
+                    arrow_right
+                </div>
+                <!-- 슬라이드 이미지 -->
+                <div class="slide slide1">
+                    <div class="slide-content">
+                        <span>S1</span>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide-content">
+                        <span>S2</span>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide-content">
+                        <span>S3</span>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="slide-content">
+                        <span>S4</span>
+                    </div>
+                </div>
+                <div class="slide slide5">
+                    <div class="slide-content">
+                        <span>S5</span>
+                    </div>
+                </div>
+                <div class="slide slide6">
+                    <div class="slide-content">
+                        <span>S6</span>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot4"></div>
+                    <div class="dot dot5"></div>
+                    <div class="dot dot6"></div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- footer -->

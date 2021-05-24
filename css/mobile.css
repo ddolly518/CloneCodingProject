@@ -14,6 +14,7 @@ body{
 .wrapper {
     width: 1903px;
     margin: 0 auto;
+    background: white;
 }
 /* header */
 header {
@@ -41,11 +42,12 @@ header .header-primary {
 }
 header .header-secondary {
     background-color: white;
-    width: 1903px;
+    box-sizing: border-box;
+    margin: 0 361.5px;
+    width: 1180px;
     height: 60px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 .material-icons {
     color: #FFFFFF;;
@@ -106,43 +108,45 @@ nav .side-menu .item .nav-contents> ul li a:hover {
 header .header-secondary .corona span {
     font-size: 18px;
     color:black;
+    font-weight: 500;
 }
 header .header-secondary .corona {
     text-decoration: none;
     font-size: 25px;
     color: black;
+    font-weight: 500;    
 }
-header .header-primary .shim {
+header .header-secondary .shim {
     position: absolute;
     margin-left: 50px;
     font-size: 18px;
     font-weight: 500;
 }
-header .header-primary .shim li {
+header .header-secondary .shim li {
     float: left;
 }
-header .header-primary .shim li a {
+header .header-secondary .shim li a {
     position: relative;
     padding: 18px 15px;
     text-decoration: none;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-header .header-primary .shim li img {
+header .header-secondary .shim li img {
     margin: 0 4px;
     width:24px;
     height: 24px;
 }
 header .header-primary .sns {
     position: absolute;
-    right: 296px;
+    right: 0px;
 }
-header .header-primary .sns li {
+header .header-secondary .sns li {
     float:left;
 }
-header .header-primary .sns img {
+header .header-secondary .sns img {
     border-radius: 50%;
     margin: 0 4px;
     width: 24px;
@@ -152,12 +156,12 @@ header .header-primary .country {
     position: absolute;
     right: 432px;
 }
-header .header-primary .country li {
+header .header-secondary .country li {
     float: left;
     padding: 0 5px;
     font-size: 13px;
 }
-header .header-primary .country a {
+header .header-secondary .country a {
     text-decoration: none;
     color: #444444;
 }
@@ -335,8 +339,6 @@ main {
     margin: 0 auto;
 }
 main #banner {
-    width: 1503px;
-    height: 85px;
     background: #EEEFEF;
     margin: 20px 0;
     top: 120px;
@@ -344,9 +346,9 @@ main #banner {
     z-index: 1;
 }
 main #banner img {
-    width: 1180px;
-    height: 84px;
-    margin-left: 170px;
+    width: 1170px;
+    height: 80px;
+    margin-left: 165px;
     border: 1px solid rgba(115,117,149,0.5);
 }
 /* grid-container */
