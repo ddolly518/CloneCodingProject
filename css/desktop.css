@@ -1,6 +1,8 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #EEEFEF;
+    width: 100%;
+    margin: 0 auto;
 }
 header .tablet-header {
     display: none;
@@ -182,7 +184,6 @@ header .header-primary ul.gnb li .gnb-contents > ul li:hover {
 }
 /* search */
 header .header-primary .search {
-    padding-top: 12px;
     outline: none;
     right: 10px;
     display: flex;
@@ -201,13 +202,13 @@ header .header-primary .search input {
     font-size: 14px;
     position: absolute;
     right: 0;
+    top: -45px;
     transition: .4s;
     background: white;
     box-sizing: border-box;
 }
 header .header-primary .search .btn-search {
     position: absolute;
-    right: 0;
     width: 36px;
     height: 36px;
     background: url(../images/ico_search.png) no-repeat center;
@@ -266,13 +267,14 @@ main .embanner > div img {
 main .grid-container {
     display: grid;
     grid-template-columns: 480px 340px 333px;
-    grid-template-rows: 195px 185px 250px 106px 190px;
+    grid-template-rows: 195px 185px 250px 96px 190px;
     gap: 10px;
     top: 10px;
     position: relative;
     background-color: #EEEFEF;
     padding: 10px;
     margin: 0 auto;
+    justify-content: center;
 }
 .grid-container> div {
     background-color: #EEEFEF;
@@ -428,8 +430,21 @@ main .grid-container .item1 .container-list1 a .more {
     font-size: 13px;
     color: #3d4656;
     position: absolute;
-    right: 705px;
+    margin-left: 135px;
     margin-top: 4px;
+}
+main .grid-container .item1 .container-list1 a .more .more-icon {
+    display: inline-block;
+    background-color: #a7a7a7;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    margin-left: 3px;
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
 }
 /* item2 */
 main .grid-container .item2 {
@@ -439,21 +454,22 @@ main .grid-container .item2 {
 main .grid-container .item2 .graph {
     border-top: 4px solid #164068;
     position: relative;
-    top: 32px;
+    top: 31px;
+    height: 615px;
 }
 main .grid-container .item2 .graph-detail {
     padding: 16px 20px;
     position: absolute;
-    width: 20%;
+    width: 232px;
     border-top: 4px solid #164068;
     border-left: 1px solid #CCCCCC;
     display: table-cell;
     font-size: 16px;
-    right: 13px;
-    top: 42px;
-    height: 612px;
+    top: 41px;
+    height: 615px;
     box-sizing: border-box;
     background: white;
+    margin-left: 450px;
 }
 main .grid-container .item2 .graph-detail h3 {
     display: block;
@@ -505,57 +521,6 @@ main .grid-container .item2 .graph-detail p {
     color: #666;
     padding: 1px 0;
 }
-main .grid-container .item2 .graph-banner {
-    width: 237px;
-    font-size: 16px;
-    position: absolute;
-    right: 13px;
-    bottom: 200px;
-}
-main .grid-container .item2 .graph-banner li {
-    margin-top: 1px;
-}
-main .grid-container .item2 .graph-banner a {
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-    display: block;
-    padding: 4px;
-    height: 37px;
-    box-sizing: border-box;
-}
-main .grid-container .item2 .graph-banner a img {
-    width: 36px;
-    height: 24px;
-    margin: 0 4px;
-}
-main .grid-container .item2 .graph-banner a span {
-    font-size: 13px;
-    line-height: 21px;
-    font-weight: 500;
-    color: #fff;
-    letter-spacing: -0.975px;
-}
-main .grid-container .item2 .graph-banner a span em {
-    color: #ffeb99;
-    letter-spacing: -0.975px;
-}
-main .grid-container .item2 .graph-banner li:first-child {
-    background: #476aa7;
-}
-main .grid-container .item2 .graph-banner li:nth-child(2) {
-    background: #199b0f;
-}
-main .grid-container .item2 .graph-banner li:nth-child(3) {
-    background: #006666;
-}
-main .grid-container .item2 .graph-banner li:nth-child(4) {
-    background: #006699;
-    height: 50px;
-}
-main .grid-container .item2 .graph-banner li:nth-child(5) {
-    background: #3889CB;
-}
 main .grid-container .item2 .container-list2 .region1 {
     background: #164068;
     padding: 2px 24px;
@@ -565,6 +530,7 @@ main .grid-container .item2 .container-list2 .region1 {
     display: block;
     position: absolute;
     z-index: 5;
+    margin-left: 4px;
 }
 main .grid-container .item2 .container-list2 .region1 span {
     color: #fff;
@@ -585,14 +551,16 @@ main .grid-container .item2 .container-list2 .region2 {
     border: 1px solid #164068;
     font-size: 0px;
     position: absolute;
-    right: 13px;
     box-sizing: border-box;
+    margin-left: 276px;
+    height: 28px;
 }
 main .grid-container .item2 .container-list2 .region2 span {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     color: #164068;
+    letter-spacing: -0.75px;
 }
 main .grid-container .item2 .container-list2 .region2 em {
     font-size: 14px;
@@ -620,7 +588,7 @@ main .grid-container .item3 h3 {
 }
 /* info-core */
 main .grid-container .item3 .info-core {
-    width: 1000%;
+    width: 100%;
 }
 main .grid-container .item3 .info-core li {
     font-size: 16px;
@@ -646,8 +614,8 @@ main .grid-container .item3 img {
     width: 275px;
     height: 180px;
     position: absolute;
-    right: 703px;
     top: 220px;
+    margin-left: 195px;
 }
 /* item4 */
 main .grid-container .item4 {
@@ -684,18 +652,28 @@ main .grid-container .item5 .quick-banner li {
     width: 20%;
 }
 main .grid-container .item5 .quick-banner li a {
+    text-decoration: none;
     padding: 8px;
     display: block;
     height: 96px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 main .grid-container .item5 .quick-banner li span {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 17px;
     font-weight: 500;
     color: #fff;
-    vertical-align: middle;
     letter-spacing: -0.075em;
+    word-break: keep-all;
+}
+main .grid-container .item5 .quick-banner li span em {
+    color: #ffeb99;
+}
+main .grid-container .item5 .quick-banner li span img {
+    width: 36px;
+    height: 24px;
+    color: #fff;
 }
 main .grid-container .item5 .quick-banner li:first-child a {
     background: linear-gradient(to right, #4568aa, #1b336f 70%);
@@ -750,7 +728,7 @@ main .grid-container .item6 #slider .slide4 {
 }
 main .grid-container .item6 #slider .slide-content {
     width: 100%;
-    height: 25vh;
+    height: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -959,7 +937,7 @@ footer .footer-secondary ul.footer-main {
 footer .footer-secondary ul.footer-main li.item {
     position: relative;
     display: block;
-    width: 215px;
+    padding-right: 24px;
 }
 footer .footer-secondary ul.footer-main li.item .item-title {
     display: flex;
@@ -971,12 +949,7 @@ footer .footer-secondary ul.footer-main li.item .item-title {
     cursor: pointer;
 }
 footer .footer-secondary ul.footer-main li.item .item-title:hover {
-    background-color: #0B9BC9;
-    color: white;
     transition: .4s;
-}
-footer .footer-secondary ul.footer-main li.item .item-title:hover .material-icons {
-    color: white;
 }
 footer .footer-secondary ul.footer-main li.item .item-title .item-name {
     font-size: 13px;
@@ -987,18 +960,24 @@ footer .footer-secondary ul.footer-main li.item .item-title .item-name {
 footer .footer-secondary ul.footer-main li.item .item-title .material-icons {
     font-size: 24px;
     padding-left: 5px;
-    color: black;
+    color: #666;
 }
 footer .footer-secondary ul.footer-main li.item .item-contents {
     position: absolute;
     bottom: 55px;
-    color: #0B9BC9;
-    background: white;
-    width: 100%;
-    font-size: 16px;
+    color: #666;
+    background: #fff;
+    padding: 8px 16px;
+    font-size: 13px;
+    line-height: 16px;
     font-weight: 300;
     box-sizing: border-box;
     display: none;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+footer .footer-secondary ul.footer-main li.item .item-contents> ul li:last-child {
+    border-bottom: 0;
 }
 footer .footer-secondary ul.footer-main li.item:hover .item-contents {
     display: block;
@@ -1006,12 +985,10 @@ footer .footer-secondary ul.footer-main li.item:hover .item-contents {
 footer .footer-secondary ul.footer-main li.item .item-contents>ul li {
     padding: 5px 5px;
     transition: .4s;
-    border: 1px solid #ddd;
+    border-bottom: 1px solid #eee
 }
 footer .footer-secondary ul.footer-main li.item .item-contents>ul li:hover {
     transition: .4s;
-    background: #149dca;
-    color: white;
 }
 /* footer-primary */
 footer .footer-primary {
@@ -1019,18 +996,23 @@ footer .footer-primary {
 }
 footer .footer-primary > div {
     width: 1180px;
+    height: 117px;
     margin: 0 auto;
     padding: 24px 0 48px 0;
+    box-sizing: border-box;
 }
 footer .footer-primary .f-left {
     position: relative;
     left: 20px;
     font-size: 13px;
     color: #222222;
+    float: left;
 }
 footer .footer-primary .f-left li {
     float: left;
     padding: 0 12px;
+    letter-spacing: -0.048em;
+    line-height: 14px;
     border-right: 1px solid #ddd;
 }
 footer .footer-primary .f-left li:first-child {
@@ -1038,21 +1020,19 @@ footer .footer-primary .f-left li:first-child {
     color: #405985;
     font-weight: bold;
 }
-footer .footer-primary .copyright {
-    margin-top: 12px;
-}
 footer .footer-primary .copyright p {
     font-size: 12px;
     line-height: 19px;
     color: #666;
+    margin-top: 25px;
+    margin-left: -210px;
 }
 footer .footer-primary .f-right {
-    position: absolute;
     width: 56px;
     height: 40px;
     background: url(../images/mark_open.png) no-repeat 0 center;
     margin-top: -10px;
-}
-footer .footer-primary .f-right a {
+    float: right;
+    text-align: right;
     cursor: pointer;
 }

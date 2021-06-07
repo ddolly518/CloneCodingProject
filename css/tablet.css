@@ -16,6 +16,24 @@ header {
     font-weight: 400;
     letter-spacing: -0.024em;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+header .material-icons {
+    cursor: pointer;
+    font-size: 32px;
+    color: #F6F5F0;
+    position: absolute;
+}
+header .material-icons#btn-open {
+    display: block;
+}
+header .material-icons#btn-close {
+    display: none;
+}
+header nav ul {
+    display: none;
 }
 header .corona a {
     font-size: 23px;
@@ -48,12 +66,11 @@ header .top-other .shim li a {
     cursor: pointer;
     padding-left: 26px;
     height: 40px;
-    line-height: 40px;
-    font-size: 15px;
+    line-height: 24px;
+    font-size: 14px;
     font-weight: 400;
-    letter-spacing: -0.07em;
-    color: #000;
-    background-size: 20px;
+    letter-spacing: -0.05em;
+    color: #fff;
 }
 header .top-other .sns {
     float: left;
@@ -86,11 +103,829 @@ header .top-other .country li a {
     cursor: pointer;
     font-size: 13px;
     line-height: 24px;
-    color: #444;
+    color: #fff;
 }
 header .search .material-icons {
     background: white;
     border-radius: 50%;
     width: 32px;
     height: 32px;
+}
+main {
+    width: 100%;
+    height: auto;
+    background-color: #EEEFEF;
+    margin: 0 auto;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+main .embanner {
+    width: 100%;
+}
+main .embanner > div {
+    width: 1180px;
+    margin: 10px auto;
+}
+main .embanner > div > a {
+    cursor: pointer;
+
+}
+main .embanner > div img {
+    border: 1px solid rgba(115,117,149,0.5);
+    width: 1178px;
+}
+/* grid-container */
+main .grid-container {
+    display: grid;
+    /* grid-template-columns: 480px 340px 333px; */
+    /* grid-template-rows: 195px 185px 250px 96px 190px; */
+    gap: 10px;
+    top: 10px;
+    position: relative;
+    background-color: #EEEFEF;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.grid-container> div {
+    background-color: #EEEFEF;
+    font-size: 30px;
+}
+/* item1 */
+/* datalist */
+main .grid-container .item1 .datalist ul {
+    position: relative;
+    display: table;
+    width: 100%;
+}
+main .grid-container .item1 .datalist .subtit {
+    margin-right: 7px;
+    font-size: 13px;
+    color: #fff;
+    vertical-align: middle;
+}
+main .grid-container .item1 .datalist .data {
+    font-size: 19px;
+    font-weight: 600;
+    color: #ffd43e;
+}
+main .grid-container .item1 .datalist li {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    color: black;
+}
+main .grid-container .item1 .datalist ul li:first-child {
+    background-color: #d7d9d5;
+    color: #2c322a;
+    width: 30%;
+    line-height: 42px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+}
+main .grid-container .item1 .datalist ul li:nth-child(2) {
+    border-right: 1px solid #539933;
+    background-color: #288000;
+    width: 35%;
+    display: table-cell;
+}
+main .grid-container .item1 .datalist ul li:nth-child(3) {
+    background-color: #288000;
+    width: 35%;
+    display: table-cell;
+}
+/* liveNum */
+main .grid-container .item1 .liveNum {
+    position: relative;
+    display: table;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+main .grid-container .item1 .liveNum li {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding: 10px 6px 12px 6px;
+}
+main .grid-container .item1 .liveNum ul li:first-child {
+    padding-right: 4px;
+    padding-left: 0px;
+    background-color: #0099ff;
+    width: 30%;
+}
+main .grid-container .item1 .liveNum li .tit {
+    padding-left: 4px;
+    height: 33px;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+}
+main .grid-container .item1 .liveNum li .num {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.06em;
+}
+main .grid-container .item1 .liveNum li .before {
+    font-weight: 400;
+    font-size: 13px;
+}
+main .grid-container .item1 .liveNum li .help {
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 100%;
+    right: 15px;
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+main .grid-container .item1 .liveNum .sign {
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 2;
+}
+main .grid-container .item1 .liveNum li:nth-child(2) {
+    background-color:#006699;
+    width: 24%;
+}
+main .grid-container .item1 .liveNum li:nth-child(3) {
+    background-color:#174069;
+    position: relative;
+    width: 25%;
+}
+main .grid-container .item1 .liveNum li:nth-child(4) {
+    background-color:#808080;
+    width: 21%;
+}
+main .grid-container .item1 .container-list1 {
+    font-size: 0;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+main .grid-container .item1 .container-list1 a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #174069;
+    cursor: pointer;
+}
+main .grid-container .item1 .container-list1 a .timedata {
+    margin-left: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+main .grid-container .item1 .container-list1 a .more {
+    font-size: 13px;
+    color: #3d4656;
+    position: absolute;
+    margin-left: 135px;
+    margin-top: 4px;
+}
+main .grid-container .item1 .container-list1 a .more .more-icon {
+    display: inline-block;
+    background-color: #a7a7a7;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    margin-left: 3px;
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+}
+/* item2 */
+main .grid-container .item2 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
+}
+main .grid-container .item2 .graph {
+    border-top: 4px solid #164068;
+    position: relative;
+    top: 31px;
+    height: 615px;
+}
+main .grid-container .item2 .graph-detail {
+    padding: 16px 20px;
+    position: absolute;
+    width: 232px;
+    border-top: 4px solid #164068;
+    border-left: 1px solid #CCCCCC;
+    display: table-cell;
+    font-size: 16px;
+    top: 41px;
+    height: 615px;
+    box-sizing: border-box;
+    background: white;
+    margin-left: 450px;
+}
+main .grid-container .item2 .graph-detail h3 {
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #222;
+}
+main .grid-container .item2 .graph-detail h4 {
+    padding-left: 22px;
+    position: relative;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 6px;
+}
+main .grid-container .item2 .graph-detail h4 .circle1 {
+    background: #ffb911;
+    border-radius: 50%;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    left: 0;
+}
+main .grid-container .item2 .graph-detail h4 .circle2 {
+    background: #4088da;
+    border-radius: 50%;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    left: 0;
+}
+main .grid-container .item2 .graph-detail h4 .circle3 {
+    background: #d2f0fb;
+    border-radius: 50%;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    left: 0;
+}
+main .grid-container .item2 .graph-detail p {
+    line-height: 19px;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #666;
+    padding: 1px 0;
+}
+main .grid-container .item2 .container-list2 .region1 {
+    background: #164068;
+    padding: 2px 24px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    font-size: 0px;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    margin-left: 4px;
+}
+main .grid-container .item2 .container-list2 .region1 span {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+main .grid-container .item2 .container-list2 .region1 em {
+    color: #cae6f2;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 6px;
+}
+main .grid-container .item2 .container-list2 .region2 {
+    padding: 2px 24px;
+    border-radius: 14px;
+    background: white;
+    border: 1px solid #164068;
+    font-size: 0px;
+    position: absolute;
+    box-sizing: border-box;
+    margin-left: 276px;
+    height: 28px;
+}
+main .grid-container .item2 .container-list2 .region2 span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #164068;
+    letter-spacing: -0.75px;
+}
+main .grid-container .item2 .container-list2 .region2 em {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 6px;
+    color: #778898;
+}
+/* item3 */
+main .grid-container .item3 {
+    border-top: 4px solid #164068;
+    background-color: #EAFDFF;
+}
+main .grid-container .item3 .livetest {
+    width: 50%;
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+}
+main .grid-container .item3 h3 {
+    color: #174069;
+    font-size: 15px;
+    padding-right: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+}
+/* info-core */
+main .grid-container .item3 .info-core {
+    width: 100%;
+}
+main .grid-container .item3 .info-core li {
+    font-size: 16px;
+    padding: 5px 0;
+    display: inline;
+}
+main .grid-container .item3 .info-core li .tit {
+    color: #666666;
+    font-size: 13px;
+    font-weight: 600;
+}
+main .grid-container .item3 .info-core li .num {
+    color: #174069;
+    font-size: 16px;
+    font-weight: 600;
+}
+main .grid-container .item3 .info-core li .core {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
+}
+main .grid-container .item3 img {
+    width: 275px;
+    height: 180px;
+    position: absolute;
+    top: 220px;
+    margin-left: 195px;
+}
+/* item4 */
+main .grid-container .item4 {
+    border-top: 4px solid #164068;
+    background-color:#E6F6FF;
+    font-size: 16px;
+    padding-top: 7px;
+}
+main .grid-container .item4 h3 {
+    font-size: 15px;
+    color: #174069;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+}
+main .grid-container .item4 img {
+    width: 480px;
+    height: 217px;
+    box-sizing: border-box;
+    padding-top: 7px;
+}
+/* item5 */
+main .grid-container .item5 {
+    grid-column: 1 / span 3;
+    display: table;
+    z-index: 2;
+}
+main .grid-container .item5 .quick-banner {
+    display: table;
+    width: 100%;
+}
+main .grid-container .item5 .quick-banner li {
+    display: table-cell;
+    width: 20%;
+}
+main .grid-container .item5 .quick-banner li a {
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    height: 96px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+main .grid-container .item5 .quick-banner li span {
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -0.075em;
+    word-break: keep-all;
+}
+main .grid-container .item5 .quick-banner li span em {
+    color: #ffeb99;
+}
+main .grid-container .item5 .quick-banner li span img {
+    width: 36px;
+    height: 24px;
+    color: #fff;
+}
+main .grid-container .item5 .quick-banner li:first-child a {
+    background: linear-gradient(to right, #4568aa, #1b336f 70%);
+}
+main .grid-container .item5 .quick-banner li:nth-child(2) a {
+    background: #199b0f;
+}
+main .grid-container .item5 .quick-banner li:nth-child(3) a {
+    background: #006666;
+}
+main .grid-container .item5 .quick-banner li:nth-child(4) a {
+    background: #006699;
+}
+main .grid-container .item5 .quick-banner li:nth-child(5) a {
+    background: #3889cb;
+}
+/* item6 */
+main .grid-container .item6 {
+    width: 480px;
+    margin: 0 auto;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .grid-container .item6 #slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+main .grid-container .item6 #slider .slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+main .grid-container .item6 #slider .slide1 {
+    background-image: url("../images/slide-image1.jpg");
+}
+
+main .grid-container .item6 #slider .slide2 {
+    background-image: url("../images/slide-image2.png");
+}
+
+main .grid-container .item6 #slider .slide3 {
+    background-image: url("../images/slide-image3.png");
+}
+
+main .grid-container .item6 #slider .slide4 {
+    background-image: url("../images/slide-image4.jpg");
+}
+main .grid-container .item6 #slider .slide-content {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .grid-container .item6 #slider .slide-content span {
+    font-size: 80px;
+    color: #F6F5F0;
+}
+/* SLIDER ARROW */
+main .grid-container .item6 #slider .arrow-left, main .grid-container .item6 #slider .arrow-right {
+    position: absolute;
+    top: 45%;
+    font-size: 80px;
+    margin-top: -60px;
+    cursor: pointer;
+    z-index: 2;
+}
+main .grid-container .item6 #slider .arrow-left {
+    left: 10px;
+}
+main .grid-container .item6 #slider .arrow-right {
+    right: 10px;
+}
+main .grid-container .item6 #slider .dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .grid-container .item6 #slider .dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background: #F6F5F0;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+main .grid-container .item6 #slider .dots .dot1 {
+    background: #1107ff;
+    width: 30px
+}
+/* item7 */
+main .grid-container .item7 {
+    border-top: 4px solid #164068;
+    background: white;
+}
+main .grid-container .item7 h3 {
+    color: #145663;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+}
+main .grid-container .item7 .more{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #009fd1;
+    color: #fff;
+    margin-bottom: -3px;
+    margin-left: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+}
+main .grid-container .item7 h4 {
+    color: #164068;
+    margin-left: 10px;
+    padding: 0 3px;
+    font-size: 13px;
+    font-weight: 600;
+}
+main .grid-container .item7 a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #222222;
+}
+main .grid-container .item7 .title-list {
+    padding: 4px 7px;
+}
+main .grid-container .item7 li {
+    padding: 2px 0;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* item8 */
+main .grid-container .item8 {
+    border-top: 4px solid #164068;
+    background: white;
+}
+main .grid-container .item8 h3 {
+    color: #585041;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+}
+main .grid-container .item8 .more{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #009fd1;
+    color: #fff;
+    margin-bottom: -3px;
+    margin-left: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+}
+main .grid-container .item8 h4 {
+    color: #164068;
+    margin-left: 10px;
+    padding: 0 3px;
+    font-size: 13px;
+    font-weight: 600;
+}
+main .grid-container .item8 a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #222222;
+}
+main .grid-container .item8 li {
+    padding: 2px 0;
+    line-height: 16px;
+    font-size: 16px;
+}
+main .grid-container .item8 .title-list {
+    padding: 4px 7px;
+}
+/* contanier-main */
+main .contanier-main {
+    background-color: white;
+}
+main .contanier-main > div {
+    width: 95%;
+    margin: 0 auto;
+    padding: 24px;
+    padding-bottom: 48px;
+    height: 188px;
+}
+main .contanier-main h3 {
+    position: relative;
+    display: block;
+    padding: 10px;
+    width: 20%;
+    height: 100%;
+    background-color: #18407d;
+    display: inline-block;
+    color: #d1ffff;
+}
+main .contanier-main h3 .info {
+    position: absolute;
+    left: 14px;
+    bottom: 12px;
+    font-size: 13px;
+    letter-spacing: -0.05em;
+}
+main .contanier-main h3 .txt {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+main .contanier-main ul {
+    height: 180px;
+    float: right;
+    width: 75%;
+    padding: 14px;
+    background-color: #ccc;
+}
+main .contanier-main ul li {
+    float: left;
+    margin-left: 1.333%;
+    width: 32%;
+    background-color: #ddd;
+}
+main .contanier-main ul li img {
+    height: 100%;
+    width: 100%;
+}
+main .contanier-main ul li a {
+    cursor: pointer
+}
+/* footer */
+footer {
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid #333;
+    margin-top: 70px;
+    background: #f8f8f8;
+}
+/* footer-secondary */
+footer .footer-secondary > div {
+    padding: 0 24px;
+}
+footer .footer-secondary ul.footer-main {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+}
+footer .footer-secondary ul.footer-main li.item {
+    position: relative;
+    display: block;
+    padding-right: 24px;
+}
+footer .footer-secondary ul.footer-main li.item .item-title {
+    display: flex;
+    padding: 0 18px;
+    height: 55px;
+    align-items: center;
+    margin: auto;
+    transition: .4s;
+    cursor: pointer;
+}
+footer .footer-secondary ul.footer-main li.item .item-title:hover {
+    transition: .4s;
+}
+footer .footer-secondary ul.footer-main li.item .item-title .item-name {
+    font-size: 13px;
+    line-height: 14px;
+    padding: 5px 0;
+    padding-right: 4px;
+}
+footer .footer-secondary ul.footer-main li.item .item-title .material-icons {
+    font-size: 24px;
+    padding-left: 5px;
+    color: #666;
+}
+footer .footer-secondary ul.footer-main li.item .item-contents {
+    position: absolute;
+    bottom: 55px;
+    color: #666;
+    background: #fff;
+    padding: 8px 16px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 300;
+    box-sizing: border-box;
+    display: none;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+footer .footer-secondary ul.footer-main li.item .item-contents> ul li:last-child {
+    border-bottom: 0;
+}
+footer .footer-secondary ul.footer-main li.item:hover .item-contents {
+    display: block;
+}
+footer .footer-secondary ul.footer-main li.item .item-contents>ul li {
+    padding: 5px 5px;
+    transition: .4s;
+    border-bottom: 1px solid #eee
+}
+footer .footer-secondary ul.footer-main li.item .item-contents>ul li:hover {
+    transition: .4s;
+}
+/* footer-primary */
+footer .footer-primary {
+    border-top: 1px solid #ddd;
+}
+footer .footer-primary > div {
+    width: 1180px;
+    height: 117px;
+    margin: 0 auto;
+    padding: 24px 0 48px 0;
+    box-sizing: border-box;
+}
+footer .footer-primary .f-left {
+    position: relative;
+    left: 20px;
+    font-size: 13px;
+    color: #222222;
+    float: left;
+}
+footer .footer-primary .f-left li {
+    float: left;
+    padding: 0 12px;
+    letter-spacing: -0.048em;
+    line-height: 14px;
+    border-right: 1px solid #ddd;
+}
+footer .footer-primary .f-left li:first-child {
+    font-size: 13px;
+    color: #405985;
+    font-weight: bold;
+}
+footer .footer-primary .copyright p {
+    font-size: 12px;
+    line-height: 19px;
+    color: #666;
+    margin-top: 25px;
+    margin-left: -210px;
+}
+footer .footer-primary .f-right {
+    width: 56px;
+    height: 40px;
+    background: url(../images/mark_open.png) no-repeat 0 center;
+    margin-top: -10px;
+    float: right;
+    cursor: pointer;
+}
+/* scroll To Top */
+.btn-scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    width: 40px;
+    right: calc((100% - 1100px)/2 - 100px);
+    cursor: pointer;
+    animation: float 6s ease infinite;
+    z-index: 50;
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
