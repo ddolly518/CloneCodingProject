@@ -239,7 +239,7 @@ header .header-primary .search input:focus {
         transform: translatey(0px);
     }
 }
-
+/* main */
 main {
     width: 100%;
     height: auto;
