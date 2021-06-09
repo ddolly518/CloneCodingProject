@@ -29,7 +29,7 @@ header #btn-close {
 }
 header nav {
     position: absolute;
-    top: 72px;
+    top: 0;
     height: 301%;
     width: 300px;
     background: white;
@@ -251,6 +251,9 @@ main .grid-container {
 .grid-container> div {
     background-color: #EEEFEF;
     font-size: 30px;
+}
+main .grid-container .item6-5 {
+    display: none;
 }
 /* item1 */
 /* datalist */

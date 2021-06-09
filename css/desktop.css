@@ -282,6 +282,9 @@ main .grid-container {
     background-color: #EEEFEF;
     font-size: 30px;
 }
+main .grid-container .item6-5 {
+    display: none;
+}
 /* item1 */
 /* datalist */
 main .grid-container .item1 .datalist ul {

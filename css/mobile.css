@@ -21,18 +21,18 @@ header .header-secondary .material-icons {
     position: absolute;
     cursor: pointer;
 }
-header .header-secondary #btn-open {
+header .header-secondary #btn--open {
     display: block;
     padding: 4px;
     margin: 12px;
     background: white;
 }
-header .header-secondary #btn-close {
+header .header-secondary #btn--close {
     display: none;
 }
 header .header-secondary nav {
     position: absolute;
-    top: 72px;
+    top: 0;
     height: 301%;
     width: 300px;
     background: white;
@@ -44,7 +44,7 @@ header .header-secondary nav .nav-title {
     background: #f8f8f8;
     border-bottom: 2px solid #4f5569;
 }
-header .header-secondary nav .nav-title #btn-close {
+header .header-secondary nav .nav-title #btn--close {
     width: 40px;
     height: 40px;
     background-color: #4f5569;
@@ -97,6 +97,10 @@ header .header-secondary nav .side-menu li .nav-contents {
 }
 header .header-secondary nav .side-menu li:hover .nav-contents {
     display: block;
+}
+header .header-secondary nav .side-menu li:hover .nav-name {
+    background-color: #093787;
+    color: #fff;
 }
 header .header-secondary nav .side-menu li .nav-contents a {
     display: block;
@@ -264,9 +268,9 @@ main .embanner > div img {
 /* grid-container */
 main .grid-container {
     display: grid;
-    grid-template-columns: 48% 48%;
-    grid-template-rows: 191px 184px 252px 643px 96px 336px 180px;
-    gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 176px 369px 308px 966.52px 909.88px 189px 225.86px 180px 93px;
+    gap: 4px;
     top: 10px;
     position: relative;
     background-color: #EEEFEF;
@@ -451,7 +455,6 @@ main .grid-container .item1 .container-list1 a .more .more-icon {
 }
 /* item2 */
 main .grid-container .item2 {
-    grid-column: 1 / span 2;
     grid-row: 4;
 }
 main .grid-container .item2 .graph {
@@ -575,7 +578,6 @@ main .grid-container .item2 .container-list2 .region2 em {
 /* item3 */
 main .grid-container .item3 {
     border-top: 4px solid #164068;
-    grid-column: 1 / span 2;
     grid-row: 2;
     background: white;
     height: 184px;
@@ -640,7 +642,6 @@ main .grid-container .item4 {
     background-color:#E6F6FF;
     font-size: 16px;
     padding-top: 7px;
-    grid-column: 1 / span 2;
     grid-row: 3;
 }
 main .grid-container .item4 h3 {
@@ -658,11 +659,9 @@ main .grid-container .item4 img {
 }
 /* item5 */
 main .grid-container .item5 {
-    grid-column: 1 / span 3;
     display: table;
     z-index: 2;
-    grid-column: 1 / span 2;
-    grid-row: 5;
+    grid-row: 6;
 }
 main .grid-container .item5 .quick-banner {
     display: table;
@@ -718,8 +717,7 @@ main .grid-container .item6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 1 / span 2;
-    grid-row: 6;
+    grid-row: 7;
 }
 main .grid-container .item6 #slider {
     width: 100%;
@@ -799,10 +797,15 @@ main .grid-container .item6 #slider .dots .dot1 {
     background: #1107ff;
     width: 30px
 }
+/* item6-5 */
+main .grid-container .item6-5 {
+    grid-row: 5;
+}
 /* item7 */
 main .grid-container .item7 {
     border-top: 4px solid #164068;
     background: white;
+    grid-row: 8;
 }
 main .grid-container .item7 h3 {
     color: #145663;
@@ -848,6 +851,7 @@ main .grid-container .item7 li {
 main .grid-container .item8 {
     border-top: 4px solid #164068;
     background: white;
+    grid-row: 9;
 }
 main .grid-container .item8 h3 {
     color: #585041;
@@ -1059,5 +1063,21 @@ footer .footer-primary .f-right {
     cursor: pointer;
 }
 .btn-scrollToTop {
-    display: none;
+    position: fixed;
+    bottom: 30px;
+    width: 40px;
+    right: calc((100% - 1100px)/2 - 100px);
+    cursor: pointer;
+    animation: float 6s ease infinite;
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(0px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
