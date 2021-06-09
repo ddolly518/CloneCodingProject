@@ -249,19 +249,21 @@ main {
     box-sizing: border-box;
 }
 main .embanner {
-    width: 100%;
+    width: 1180px;
+    height: 85px;
+    margin: 10px auto;
 }
 main .embanner > div {
-    width: 1180px;
-    margin: 10px auto;
+    width: 100%;
+    height: 100%;
 }
 main .embanner > div > a {
     cursor: pointer;
-
 }
 main .embanner > div img {
     border: 1px solid rgba(115,117,149,0.5);
-    width: 1178px;
+    width: 100%;
+    height: 100%;
 }
 /* grid-container */
 main .grid-container {
@@ -469,7 +471,7 @@ main .grid-container .item2 .graph-detail {
     height: 615px;
     box-sizing: border-box;
     background: white;
-    margin-left: 450px;
+    margin-left: 448px;
 }
 main .grid-container .item2 .graph-detail h3 {
     display: block;
@@ -615,7 +617,7 @@ main .grid-container .item3 img {
     height: 180px;
     position: absolute;
     top: 220px;
-    margin-left: 195px;
+    margin-left: 205px;
 }
 /* item4 */
 main .grid-container .item4 {
