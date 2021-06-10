@@ -14,6 +14,7 @@ header {
     border-bottom: 1px solid #ddd;
     background-color: #0b9bc9;
 }
+/* nav */
 header .material-icons {
     position: absolute;
     cursor: pointer;
@@ -54,16 +55,14 @@ header nav .nav-title #btn-close {
     box-sizing: border-box;
 }
 header nav .nav-title .nav-site {
-    padding: 18px;
+    padding: 9px 8px;
     margin-right: 48px;
     height: 40px;
     box-sizing: border-box;
 }
 header nav .nav-title .nav-site ul li {
     float: left;
-    padding: 0 8px;
-    padding-left: 0;
-    border-left: 0;
+    padding: 4px 8px;
 }
 header nav .nav-title .nav-site ul li a {
     text-decoration: none;
@@ -88,9 +87,28 @@ header nav .side-menu li .nav-name {
 header nav .side-menu li .nav-name img {
     position: absolute;
     right: 0;
+    margin: -2px 12px;
+    opacity: 0.4;
+}
+header nav .side-menu li .nav-name .material-icons {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: -22px 12px;
+    opacity: 0.4;
 }
 header nav .side-menu li .nav-contents {
     display: none;
+}
+header nav .side-menu li:hover .nav-name {
+    color: #fff;
+    background-color: #093787;
+}
+header nav .side-menu li:hover .nav-name img {
+    display: none;
+}
+header nav .side-menu li:hover .nav-name .material-icons {
+    display: block;
 }
 header nav .side-menu li:hover .nav-contents {
     display: block;
@@ -223,6 +241,9 @@ main .embanner {
     align-items: center;
     box-sizing: border-box;
 }
+main .embanner #banner2 {
+    display: none;
+}
 main .embanner > div > a {
     cursor: pointer;
     margin: 0 auto;
@@ -302,13 +323,33 @@ main .grid-container .item1 .datalist ul li:nth-child(3) {
     width: 35%;
     display: table-cell;
 }
+main .grid-container .item1 .datalist ul li #ico-down {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: block;
+    width: 21px;
+    height: 21px;    
+}
+main .grid-container .item1 .datalist ul li img {
+    width: 24px;
+    height: 20px;
+    margin-right: 3px;
+}
 /* liveNum */
 main .grid-container .item1 .liveNum {
     position: relative;
     display: table;
-    margin-top: 4px;
+    margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
+}
+main .grid-container .item1 .liveNum ul {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-top: 2px
 }
 main .grid-container .item1 .liveNum li {
     position: relative;
@@ -320,27 +361,34 @@ main .grid-container .item1 .liveNum li {
     height: 90px;
 }
 main .grid-container .item1 .liveNum ul li:first-child {
-    padding-right: 4px;
-    padding-left: 0px;
     background-color: #0099ff;
     width: 30%;
 }
 main .grid-container .item1 .liveNum li .tit {
+    display: block;
     padding-left: 4px;
     height: 33px;
-    vertical-align: top;
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
 }
 main .grid-container .item1 .liveNum li .num {
+    display: block;
     font-weight: 400;
     font-size: 30px;
     letter-spacing: 0.06em;
 }
+main .grid-container .item1 .liveNum li .num em {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+}
 main .grid-container .item1 .liveNum li .before {
+    display: block;
     font-weight: 400;
     font-size: 13px;
+    line-height: 1.5em;
+    letter-spacing: 0.025em;
 }
 main .grid-container .item1 .liveNum li .help {
     color: #fff;
@@ -501,6 +549,10 @@ main .grid-container .item2 .graph-detail p {
     color: #666;
     padding: 1px 0;
 }
+main .grid-container .item2 .container-list2 {
+    margin: 0 auto;
+    width: 650px;
+}
 main .grid-container .item2 .container-list2 .region1 {
     background: #164068;
     padding: 2px 24px;
@@ -510,7 +562,6 @@ main .grid-container .item2 .container-list2 .region1 {
     display: block;
     position: absolute;
     z-index: 5;
-    margin-left: 4px;
 }
 main .grid-container .item2 .container-list2 .region1 span {
     color: #fff;
@@ -531,9 +582,10 @@ main .grid-container .item2 .container-list2 .region2 {
     border: 1px solid #164068;
     font-size: 0px;
     position: absolute;
+    width: 374px;
     box-sizing: border-box;
-    margin-left: 276px;
     height: 28px;
+    margin-left: 275px;
 }
 main .grid-container .item2 .container-list2 .region2 span {
     font-size: 16px;
@@ -578,7 +630,6 @@ main .grid-container .item3 .info-core {
 main .grid-container .item3 .info-core li {
     font-size: 16px;
     padding: 5px 0;
-    /* display: inline; */
 }
 main .grid-container .item3 .info-core li .tit {
     color: #666666;
@@ -867,23 +918,24 @@ main .grid-container .item8 .title-list {
 /* contanier-main */
 main .contanier-main {
     background-color: white;
+    padding-bottom: 70px;
+    width: 100%;
 }
 main .contanier-main > div {
-    width: 95%;
-    margin: 0 auto;
     padding: 24px;
     padding-bottom: 48px;
-    height: 188px;
+    width: 100%;
+    box-sizing: border-box;
 }
 main .contanier-main h3 {
     position: relative;
-    display: block;
     padding: 10px;
-    width: 20%;
-    height: 100%;
+    width: 25%;
+    height: 180px;
     background-color: #18407d;
     display: inline-block;
     color: #d1ffff;
+    box-sizing: border-box;
 }
 main .contanier-main h3 .info {
     position: absolute;
@@ -893,8 +945,8 @@ main .contanier-main h3 .info {
     letter-spacing: -0.05em;
 }
 main .contanier-main h3 .txt {
-    font-size: 17px;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 1.25em;
     font-weight: 600;
 }
 main .contanier-main ul {
@@ -903,6 +955,7 @@ main .contanier-main ul {
     width: 75%;
     padding: 14px;
     background-color: #ccc;
+    box-sizing: border-box;
 }
 main .contanier-main ul li {
     float: left;
@@ -920,13 +973,15 @@ main .contanier-main ul li a {
 /* footer */
 footer {
     width: 100%;
-    text-align: center;
     border-top: 3px solid #333;
     background: #f8f8f8;
 }
 /* footer-secondary */
 footer .footer-secondary > div {
+    width: 100%;
     padding: 0 24px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 footer .footer-secondary ul.footer-main {
     position: relative;
@@ -936,15 +991,12 @@ footer .footer-secondary ul.footer-main {
 footer .footer-secondary ul.footer-main li.item {
     position: relative;
     display: block;
-    padding-right: 24px;
+    padding: 12px 0;
+    margin-right: 16px;
 }
 footer .footer-secondary ul.footer-main li.item .item-title {
     display: flex;
-    padding: 0 18px;
-    height: 55px;
     align-items: center;
-    margin: auto;
-    transition: .4s;
     cursor: pointer;
 }
 footer .footer-secondary ul.footer-main li.item .item-title:hover {
@@ -957,20 +1009,20 @@ footer .footer-secondary ul.footer-main li.item .item-title .item-name {
     padding-right: 4px;
 }
 footer .footer-secondary ul.footer-main li.item .item-title .material-icons {
-    font-size: 24px;
     padding-left: 5px;
     color: #666;
 }
+footer .footer-secondary ul.footer-main li.item .item-title .arrow-down {
+    display: none;
+    padding-left: 5px;
+}
 footer .footer-secondary ul.footer-main li.item .item-contents {
     position: absolute;
-    bottom: 55px;
+    bottom: 40px;
     color: #666;
     background: #fff;
-    padding: 8px 16px;
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 300;
-    box-sizing: border-box;
+    max-height: 332px;
+    overflow-y: auto;
     display: none;
     border: 1px solid #333;
     cursor: pointer;
@@ -978,13 +1030,29 @@ footer .footer-secondary ul.footer-main li.item .item-contents {
 footer .footer-secondary ul.footer-main li.item .item-contents> ul li:last-child {
     border-bottom: 0;
 }
+footer .footer-secondary ul.footer-main li.item:hover .material-icons {
+    display: none;
+}
+footer .footer-secondary ul.footer-main li.item:hover .arrow-down {
+    display: block;
+}
 footer .footer-secondary ul.footer-main li.item:hover .item-contents {
     display: block;
 }
 footer .footer-secondary ul.footer-main li.item .item-contents>ul li {
-    padding: 5px 5px;
     transition: .4s;
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid #eee;
+}
+footer .footer-secondary ul.footer-main li.item .item-contents> ul li a {
+    text-decoration: none;
+    width: 150px;
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    color: #666;
+    padding: 8px 16px;
+    cursor: pointer;
 }
 footer .footer-secondary ul.footer-main li.item .item-contents>ul li:hover {
     transition: .4s;
@@ -997,12 +1065,11 @@ footer .footer-primary > div {
     width: 100%;
     height: 117px;
     margin: 0 auto;
-    padding: 24px 0 48px 0;
+    padding: 24px 24px 48px 24px;
     box-sizing: border-box;
 }
 footer .footer-primary .f-left {
     position: relative;
-    left: 20px;
     font-size: 13px;
     color: #222222;
     float: left;
@@ -1018,13 +1085,13 @@ footer .footer-primary .f-left li:first-child {
     font-size: 13px;
     color: #405985;
     font-weight: bold;
+    padding-left: 0;
 }
 footer .footer-primary .copyright p {
     font-size: 12px;
     line-height: 19px;
     color: #666;
     margin-top: 25px;
-    margin-left: -210px;
 }
 footer .footer-primary .f-right {
     width: 56px;
@@ -1032,6 +1099,7 @@ footer .footer-primary .f-right {
     background: url(../images/mark_open.png) no-repeat 0 center;
     margin-top: -10px;
     float: right;
+    text-align: right;
     cursor: pointer;
 }
 /* scroll To Top */

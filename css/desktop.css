@@ -130,7 +130,6 @@ header .header-primary ul.gnb li {
 }
 header .header-primary ul.gnb li .item-title {
     display: flex;
-    /* height: 30px; */
     align-items: center;
     transition: .4s;
     cursor: pointer;
@@ -253,6 +252,9 @@ main .embanner {
     height: 85px;
     margin: 10px auto;
 }
+main .embanner #banner2 {
+    display: none;
+}
 main .embanner > div {
     width: 100%;
     height: 100%;
@@ -317,6 +319,7 @@ main .grid-container .item1 .datalist ul li:first-child {
     position: relative;
     font-size: 14px;
     font-weight: 600;
+    padding-right: 40px;
 }
 main .grid-container .item1 .datalist ul li:nth-child(2) {
     border-right: 1px solid #539933;
@@ -329,13 +332,33 @@ main .grid-container .item1 .datalist ul li:nth-child(3) {
     width: 35%;
     display: table-cell;
 }
+main .grid-container .item1 .datalist ul li #ico-down {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: block;
+    width: 21px;
+    height: 21px;    
+}
+main .grid-container .item1 .datalist ul li img {
+    width: 24px;
+    height: 20px;
+    margin-right: 3px;
+}
 /* liveNum */
 main .grid-container .item1 .liveNum {
     position: relative;
     display: table;
-    margin-top: 5px;
+    margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
+}
+main .grid-container .item1 .liveNum ul {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-top: 2px
 }
 main .grid-container .item1 .liveNum li {
     position: relative;
@@ -346,29 +369,45 @@ main .grid-container .item1 .liveNum li {
     padding: 10px 6px 12px 6px;
 }
 main .grid-container .item1 .liveNum ul li:first-child {
-    padding-right: 4px;
-    padding-left: 0px;
     background-color: #0099ff;
     width: 30%;
+    padding-right: 4px;
 }
 main .grid-container .item1 .liveNum li .tit {
+    display: block;
     padding-left: 4px;
-    height: 33px;
-    vertical-align: top;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 16px;
     font-weight: 600;
+    height: 33px;
+}
+main .grid-container .item1 .liveNum li .mini-tit {
+    font-size: 15px;
+    line-height: 12px;
+    font-weight: 400;
+    display: inline-block;
 }
 main .grid-container .item1 .liveNum li .num {
+    display: block;
     font-weight: 400;
     font-size: 30px;
-    letter-spacing: 0.06em;
+    letter-spacing: -0.05em;
+    line-height: 1.25em;
+}
+main .grid-container .item1 .liveNum li .num em {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
 }
 main .grid-container .item1 .liveNum li .before {
+    display: block;
     font-weight: 400;
     font-size: 13px;
+    line-height: 1.5em;
+    letter-spacing: 0.025em;
 }
 main .grid-container .item1 .liveNum li .help {
+    position: absolute;
     color: #fff;
     border: 1px solid #fff;
     display: inline-block;
@@ -381,7 +420,6 @@ main .grid-container .item1 .liveNum li .help {
     line-height: 14px;
     cursor: pointer;
     box-sizing: border-box;
-    margin-left: 5px;
 }
 main .grid-container .item1 .liveNum .sign {
     position: absolute;
@@ -876,7 +914,7 @@ main .contanier-main {
     background-color: white;
 }
 main .contanier-main > div {
-    width: 1200px;
+    width: 1180px;
     margin: 0 auto;
     padding: 60px 0;
     height: 190px;
@@ -885,13 +923,15 @@ main .contanier-main h3 {
     position: relative;
     display: block;
     padding: 10px;
-    width: 252px;
-    height: 168px;
+    width: 25%;
+    height: 100%;
     background-color: #18407d;
-    display: inline-block;
     color: #d1ffff;
+    box-sizing: border-box;
+    display: inline-block;
 }
 main .contanier-main h3 .info {
+    display: inline-block;
     position: absolute;
     left: 14px;
     bottom: 12px;
@@ -904,11 +944,12 @@ main .contanier-main h3 .txt {
     font-weight: 600;
 }
 main .contanier-main ul {
-    height: 160px;
+    height: 190px;
     float: right;
     width: 75%;
     padding: 14px;
     background-color: #ccc;
+    box-sizing: border-box;
 }
 main .contanier-main ul li {
     float: left;
@@ -926,8 +967,8 @@ main .contanier-main ul li a {
 /* footer */
 footer {
     width: 100%;
-    text-align: center;
     border-top: 3px solid #333;
+    background: #f8f8f8;
 }
 /* footer-secondary */
 footer .footer-secondary > div {
@@ -942,15 +983,12 @@ footer .footer-secondary ul.footer-main {
 footer .footer-secondary ul.footer-main li.item {
     position: relative;
     display: block;
-    padding-right: 24px;
+    padding: 12px 0;
+    margin-right: 16px;
 }
 footer .footer-secondary ul.footer-main li.item .item-title {
     display: flex;
-    padding: 0 18px;
-    height: 55px;
     align-items: center;
-    margin: auto;
-    transition: .4s;
     cursor: pointer;
 }
 footer .footer-secondary ul.footer-main li.item .item-title:hover {
@@ -963,20 +1001,20 @@ footer .footer-secondary ul.footer-main li.item .item-title .item-name {
     padding-right: 4px;
 }
 footer .footer-secondary ul.footer-main li.item .item-title .material-icons {
-    font-size: 24px;
     padding-left: 5px;
     color: #666;
 }
+footer .footer-secondary ul.footer-main li.item .item-title .arrow-down {
+    display: none;
+    padding-left: 5px;
+}
 footer .footer-secondary ul.footer-main li.item .item-contents {
     position: absolute;
-    bottom: 55px;
+    bottom: 40px;
     color: #666;
     background: #fff;
-    padding: 8px 16px;
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 300;
-    box-sizing: border-box;
+    max-height: 332px;
+    overflow-y: auto;
     display: none;
     border: 1px solid #333;
     cursor: pointer;
@@ -984,13 +1022,29 @@ footer .footer-secondary ul.footer-main li.item .item-contents {
 footer .footer-secondary ul.footer-main li.item .item-contents> ul li:last-child {
     border-bottom: 0;
 }
+footer .footer-secondary ul.footer-main li.item:hover .material-icons {
+    display: none;
+}
+footer .footer-secondary ul.footer-main li.item:hover .arrow-down {
+    display: block;
+}
 footer .footer-secondary ul.footer-main li.item:hover .item-contents {
     display: block;
 }
 footer .footer-secondary ul.footer-main li.item .item-contents>ul li {
-    padding: 5px 5px;
     transition: .4s;
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid #eee;
+}
+footer .footer-secondary ul.footer-main li.item .item-contents> ul li a {
+    text-decoration: none;
+    width: 150px;
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    color: #666;
+    padding: 8px 16px;
+    cursor: pointer;
 }
 footer .footer-secondary ul.footer-main li.item .item-contents>ul li:hover {
     transition: .4s;
@@ -1008,7 +1062,6 @@ footer .footer-primary > div {
 }
 footer .footer-primary .f-left {
     position: relative;
-    left: 20px;
     font-size: 13px;
     color: #222222;
     float: left;
@@ -1024,13 +1077,13 @@ footer .footer-primary .f-left li:first-child {
     font-size: 13px;
     color: #405985;
     font-weight: bold;
+    padding-left: 0;
 }
 footer .footer-primary .copyright p {
     font-size: 12px;
     line-height: 19px;
     color: #666;
     margin-top: 25px;
-    margin-left: -210px;
 }
 footer .footer-primary .f-right {
     width: 56px;
