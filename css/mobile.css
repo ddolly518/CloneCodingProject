@@ -940,7 +940,6 @@ main .contanier-main > div {
     margin: 0 auto;
     padding: 24px;
     padding-bottom: 48px;
-    height: 188px;
 }
 main .contanier-main h3 {
     position: relative;
@@ -953,11 +952,7 @@ main .contanier-main h3 {
     color: #d1ffff;
 }
 main .contanier-main h3 .info {
-    position: absolute;
-    left: 14px;
-    bottom: 12px;
-    font-size: 13px;
-    letter-spacing: -0.05em;
+    display: none;
 }
 main .contanier-main h3 .txt {
     font-size: 17px;
@@ -965,14 +960,12 @@ main .contanier-main h3 .txt {
     font-weight: 600;
 }
 main .contanier-main ul {
-    height: 180px;
     float: right;
     width: 75%;
     padding: 14px;
     background-color: #ccc;
 }
 main .contanier-main ul li {
-    float: left;
     margin-left: 1.333%;
     width: 32%;
     background-color: #ddd;
