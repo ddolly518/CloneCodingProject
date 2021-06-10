@@ -299,6 +299,10 @@ main .grid-container {
     background-color: #EEEFEF;
     font-size: 30px;
 }
+main .grid-container .button .liveopenBtn {}
+main .grid-container .button .livecloseBtn {
+    display: none;
+}
 /* item1 */
 /* datalist */
 main .grid-container .item1 {
@@ -308,15 +312,20 @@ main .grid-container .item1 .datalist ul {
     position: relative;
     display: table;
     width: 100%;
+    border-top: 4px solid #164068;
+    height: 35px;
 }
 main .grid-container .item1 .datalist .subtit {
     margin-right: 7px;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 35px;
     color: #fff;
     vertical-align: middle;
 }
 main .grid-container .item1 .datalist .data {
-    font-size: 19px;
+    font-size: 16px;
+    line-height: 40px;
+    vertical-align: middle;
     font-weight: 600;
     color: #ffd43e;
 }
@@ -330,10 +339,13 @@ main .grid-container .item1 .datalist ul li:first-child {
     background-color: #d7d9d5;
     color: #2c322a;
     width: 30%;
-    line-height: 42px;
+    line-height: 35px;
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
+    padding-right: 40px;
+    box-sizing: border-box;
+    vertical-align: middle;
 }
 main .grid-container .item1 .datalist ul li:nth-child(2) {
     border-right: 1px solid #539933;
@@ -359,7 +371,7 @@ main .grid-container .item1 .datalist ul li img {
 main .grid-container .item1 .liveNum {
     position: relative;
     display: table;
-    margin-top: 4px;
+    border-top: 4px solid #164068;
     width: 100%;
     box-sizing: border-box;
 }
@@ -367,7 +379,6 @@ main .grid-container .item1 .liveNum ul {
     position: relative;
     display: table;
     width: 100%;
-    margin-top: 2px
 }
 main .grid-container .item1 .liveNum li {
     position: relative;
@@ -375,41 +386,48 @@ main .grid-container .item1 .liveNum li {
     text-align: center;
     z-index: 1;
     color: #fff;
-    padding: 10px 6px 12px 6px;
-    height: 90px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
 }
 main .grid-container .item1 .liveNum ul li:first-child {
-    padding-right: 4px;
-    padding-left: 0px;
     background-color: #0099ff;
     width: 30%;
 }
 main .grid-container .item1 .liveNum li .tit {
     display: block;
-    height: 33px;
-    font-size: 16px;
-    line-height: 22px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 14px;
     font-weight: 600;
+}
+main .grid-container .item1 .liveNum li .mini-tit {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    display: inline-block;
 }
 main .grid-container .item1 .liveNum li .num {
     display: block;
     font-weight: 400;
-    font-size: 30px;
-    letter-spacing: 0.06em;
+    font-size: 18px;
+    height: 22px;
+    line-height: 1.25em;
 }
 main .grid-container .item1 .liveNum li .num em {
     display: inline-block;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 26px;
 }
 main .grid-container .item1 .liveNum li .before {
     display: block;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.5em;
     letter-spacing: 0.025em;
 }
 main .grid-container .item1 .liveNum li .help {
+    position: absolute;
     color: #fff;
     border: 1px solid #fff;
     display: inline-block;
@@ -422,17 +440,16 @@ main .grid-container .item1 .liveNum li .help {
     line-height: 14px;
     cursor: pointer;
     box-sizing: border-box;
-    margin-left: 5px;
 }
 main .grid-container .item1 .liveNum .sign {
     position: absolute;
-    left: -12px;
+    left: -9px;
     top: 50%;
     margin-top: -12px;
-    width: 24px;
-    height: 24px;
-    font-size: 16px;
-    line-height: 22px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 16px;
     font-weight: 600;
     color: #000;
     background-color: #fff;
@@ -455,15 +472,15 @@ main .grid-container .item1 .liveNum li:nth-child(4) {
 }
 main .grid-container .item1 .container-list1 {
     font-size: 0;
-    margin-top: 2px;
-    margin-bottom: 4px;
+    padding: 10px 0 0 5px;
+    background-color: #0b9bc9;
 }
 main .grid-container .item1 .container-list1 a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 600;
-    color: #174069;
+    color: #fff;
     cursor: pointer;
 }
 main .grid-container .item1 .container-list1 a .timedata {
@@ -473,11 +490,7 @@ main .grid-container .item1 .container-list1 a .timedata {
     line-height: 26px;
 }
 main .grid-container .item1 .container-list1 a .more {
-    font-size: 13px;
-    color: #3d4656;
-    position: absolute;
-    right: 40px;
-    margin-top: 4px;
+    display: none;
 }
 main .grid-container .item1 .container-list1 a .more .more-icon {
     display: inline-block;
@@ -495,6 +508,7 @@ main .grid-container .item1 .container-list1 a .more .more-icon {
 /* item2 */
 main .grid-container .item2 {
     grid-row: 4;
+    /* display: none; */
 }
 main .grid-container .item2 .graph {
     border-top: 4px solid #164068;
@@ -620,6 +634,7 @@ main .grid-container .item3 {
     grid-row: 2;
     background: white;
     height: 184px;
+    display: none;
 }
 main .grid-container .item3 .livetest {
     width: 30%;
@@ -643,7 +658,6 @@ main .grid-container .item3 .info-core {
 main .grid-container .item3 .info-core li {
     font-size: 16px;
     padding: 5px 0;
-    /* display: inline; */
 }
 main .grid-container .item3 .info-core li .tit {
     color: #666666;
@@ -677,6 +691,7 @@ main .grid-container .item3 img {
 }
 /* item4 */
 main .grid-container .item4 {
+    display: none;
     border-top: 4px solid #164068;
     background-color:#E6F6FF;
     font-size: 16px;
@@ -839,6 +854,7 @@ main .grid-container .item6 #slider .dots .dot1 {
 /* item6-5 */
 main .grid-container .item6-5 {
     grid-row: 5;
+    display: none;
 }
 /* item7 */
 main .grid-container .item7 {
@@ -934,6 +950,7 @@ main .grid-container .item8 .title-list {
 /* contanier-main */
 main .contanier-main {
     background-color: white;
+    display: none;
 }
 main .contanier-main > div {
     width: 95%;
@@ -985,7 +1002,7 @@ footer {
 }
 /* footer-secondary */
 footer .footer-secondary > div {
-    width: 1180px;
+    width: 100%;
     margin: 0 auto;
 }
 footer .footer-secondary ul.footer-main {
@@ -993,14 +1010,26 @@ footer .footer-secondary ul.footer-main {
     display: flex;
     flex-grow: 1;
 }
-footer .footer-secondary ul.footer-main li.item {
+footer .footer-secondary ul.footer-main li {
     position: relative;
+    float: left;
     display: block;
     padding: 12px 0;
-    margin-right: 16px;
+}
+footer .footer-secondary ul.footer-main li:first-child {
+    width: 50%;
+    border-right: 1px solid #ddd;
+}
+footer .footer-secondary ul.footer-main li:nth-child(2) {
+    width: 50%;
+}
+footer .footer-secondary ul.footer-main li:nth-child(3) {
+    width: 50%;
+    border-top: 1px solid #ddd;
 }
 footer .footer-secondary ul.footer-main li.item .item-title {
-    display: flex;
+    display: block;
+    padding: 0 48px 0 16px;
     align-items: center;
     cursor: pointer;
 }
@@ -1046,7 +1075,7 @@ footer .footer-secondary ul.footer-main li.item:hover .item-contents {
 }
 footer .footer-secondary ul.footer-main li.item .item-contents>ul li {
     transition: .4s;
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid #eee;
 }
 footer .footer-secondary ul.footer-main li.item .item-contents> ul li a {
     text-decoration: none;
@@ -1067,7 +1096,7 @@ footer .footer-primary {
     border-top: 1px solid #ddd;
 }
 footer .footer-primary > div {
-    width: 1180px;
+    width: 100%;
     height: 117px;
     margin: 0 auto;
     padding: 24px 0 48px 0;

@@ -287,6 +287,9 @@ main .grid-container {
 main .grid-container .item6-5 {
     display: none;
 }
+main .grid-container .button {
+    display: none;
+}
 /* item1 */
 /* datalist */
 main .grid-container .item1 .datalist ul {
@@ -341,7 +344,7 @@ main .grid-container .item1 .datalist ul li #ico-down {
     width: 21px;
     height: 21px;    
 }
-main .grid-container .item1 .datalist ul li img {
+main .grid-container .item1 .livenum ul li img {
     width: 24px;
     height: 20px;
     margin-right: 3px;

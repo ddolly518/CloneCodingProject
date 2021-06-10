@@ -276,6 +276,9 @@ main .grid-container {
 main .grid-container .item6-5 {
     display: none;
 }
+main .grid-container .button {
+    display: none;
+}
 /* item1 */
 /* datalist */
 main .grid-container .item1 {
@@ -369,8 +372,14 @@ main .grid-container .item1 .liveNum li .tit {
     padding-left: 4px;
     height: 33px;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 16px;
     font-weight: 600;
+}
+main .grid-container .item1 .liveNum li .mini-tit {
+    font-size: 15px;
+    line-height: 12px;
+    font-weight: 400;
+    display: inline-block;
 }
 main .grid-container .item1 .liveNum li .num {
     display: block;
@@ -391,6 +400,7 @@ main .grid-container .item1 .liveNum li .before {
     letter-spacing: 0.025em;
 }
 main .grid-container .item1 .liveNum li .help {
+    position: absolute;
     color: #fff;
     border: 1px solid #fff;
     display: inline-block;
@@ -403,7 +413,6 @@ main .grid-container .item1 .liveNum li .help {
     line-height: 14px;
     cursor: pointer;
     box-sizing: border-box;
-    margin-left: 5px;
 }
 main .grid-container .item1 .liveNum .sign {
     position: absolute;
