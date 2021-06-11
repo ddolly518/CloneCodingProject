@@ -280,28 +280,24 @@ main .embanner > div > a {
 main .embanner > div img {
     border: 1px solid rgba(115,117,149,0.5);
     width: 100%;
+    box-sizing: border-box;
 }
 /* grid-container */
 main .grid-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 176px 369px 308px 966.52px 909.88px 189px 225.86px 180px 93px;
+    grid-template-rows: 175px 330px 248px 890px 887px 191px 225.86px 180px 93px;
     gap: 4px;
     top: 10px;
     position: relative;
     background-color: #EEEFEF;
     padding: 0 25px;
-    /* margin: 0 auto; */
     justify-content: center;
     padding-bottom: 10px
 }
 .grid-container> div {
     background-color: #EEEFEF;
     font-size: 30px;
-}
-main .grid-container .button .liveopenBtn {}
-main .grid-container .button .livecloseBtn {
-    display: none;
 }
 /* item1 */
 /* datalist */
@@ -359,13 +355,7 @@ main .grid-container .item1 .datalist ul li:nth-child(3) {
     display: table-cell;
 }
 main .grid-container .item1 .datalist ul li img {
-    cursor: pointer;
-    position: absolute;
-    top: 12px;
-    right: 10px;
-    display: block;
-    width: 21px;
-    height: 21px;
+    display: none;
 }
 /* liveNum */
 main .grid-container .item1 .liveNum {
@@ -508,28 +498,32 @@ main .grid-container .item1 .container-list1 a .more .more-icon {
 /* item2 */
 main .grid-container .item2 {
     grid-row: 4;
-    /* display: none; */
 }
-main .grid-container .item2 .graph {
+main .grid-container .item2 .chart {
+    padding: 0 auto;
+    top: 31px;
+    width: 100%;
+    height: 405px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 4px solid #164068;
     position: relative;
-    top: 31px;
-    width: 65%;
-    height: 605px;
+    box-sizing: border-box;
+}
+main .grid-container .item2 .graph {
+    width: 350px;
+    height: 100%;
 }
 main .grid-container .item2 .graph-detail {
-    padding: 16px 20px;
-    position: absolute;
-    width: 33%;
+    padding: 13px 20px;
+    width: 100%;
     border-top: 4px solid #164068;
-    border-left: 1px solid #CCCCCC;
-    display: table-cell;
     font-size: 16px;
-    top: 688px;
-    height: 610px;
+    margin-top: 32px;
+    background: #fff;
     box-sizing: border-box;
-    background: white;
-    margin-left: 59%;
 }
 main .grid-container .item2 .graph-detail h3 {
     display: block;
@@ -581,155 +575,158 @@ main .grid-container .item2 .graph-detail p {
     color: #666;
     padding: 1px 0;
 }
+main .grid-container .item2 .container-list2 {
+    margin-top: 6px;
+}
 main .grid-container .item2 .container-list2 .region1 {
-    background: #164068;
-    padding: 2px 24px;
     border-radius: 14px;
     box-sizing: border-box;
     font-size: 0px;
     display: block;
     position: absolute;
     z-index: 5;
-    margin-left: 4px;
 }
 main .grid-container .item2 .container-list2 .region1 span {
-    color: #fff;
+    color: #164068;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
 }
 main .grid-container .item2 .container-list2 .region1 em {
-    color: #cae6f2;
+    color: #778898;
     font-size: 14px;
     line-height: 22px;
+    font-weight: 400;
     padding-left: 6px;
 }
 main .grid-container .item2 .container-list2 .region2 {
-    padding: 2px 24px;
-    border-radius: 14px;
-    background: white;
-    border: 1px solid #164068;
-    font-size: 0px;
-    position: absolute;
-    box-sizing: border-box;
-    margin-left: 276px;
-    height: 28px;
-}
-main .grid-container .item2 .container-list2 .region2 span {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #164068;
-    letter-spacing: -0.75px;
-}
-main .grid-container .item2 .container-list2 .region2 em {
-    font-size: 14px;
-    line-height: 22px;
-    padding-left: 6px;
-    color: #778898;
+    display: none;
 }
 /* item3 */
 main .grid-container .item3 {
     border-top: 4px solid #164068;
     grid-row: 2;
     background: white;
-    height: 184px;
-    display: none;
+    height: 310px;
+    margin-top: 3px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 main .grid-container .item3 .livetest {
-    width: 30%;
-    padding: 10px 10px 0 10px;
+    width: 100%;
+    padding: 10px;
     box-sizing: border-box;
     background-color: #eafdff;
-    height: 184px;
+    height: 130px;
 }
 main .grid-container .item3 h3 {
     color: #174069;
-    font-size: 15px;
+    font-size: 13px;
     padding-right: 16px;
+    padding-left: 16px;
     font-weight: 600;
-    line-height: 22px;
+    letter-spacing: -0.075em;
+    line-height: 15px;
     text-align: center;
 }
 main .grid-container .item3 .info-core {
     width: 100%;
-    padding-top: 15px;
 }
 main .grid-container .item3 .info-core li {
-    font-size: 16px;
-    padding: 5px 0;
+    font-size: 0;
+    padding: 3px 0;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
 }
 main .grid-container .item3 .info-core li .tit {
     color: #666666;
     font-size: 13px;
     font-weight: 600;
+    letter-spacing: -0.075em;
+    display: table-cell;
     width: 50%;
+    padding: 3px 0;
+    line-height: 12px;
 }
 main .grid-container .item3 .info-core li .num {
     color: #174069;
     font-size: 16px;
     font-weight: 600;
-    width: 50%;
     text-align: right;
+    display: table-cell;
+    width: 50%;
+    padding: 3px 0;
+    line-height: 12px;
+    color: #000;
+    margin-bottom: -2px;
 }
 main .grid-container .item3 .info-core li .core {
     font-size: 12px;
     color: #000000;
     font-weight: 400;
+    line-height: 12px;
 }
 main .grid-container .item3 .chart {
-    padding: 0 200px;
-    box-sizing: border-box;
-    margin-left: 5%;
-    width: 64.7%;
-    height: 184px;
+    padding: 0 auto;
+    width: 100%;
+    height: 195px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main .grid-container .item3 img {
     position: absolute;
-    height: 184px;
-    top: 205px;
+    height: 175px;
+    top: 319px;
 }
 /* item4 */
 main .grid-container .item4 {
-    display: none;
     border-top: 4px solid #164068;
     background-color:#E6F6FF;
     font-size: 16px;
-    padding-top: 7px;
+    margin-top: 5px;
+    box-sizing: border-box;
     grid-row: 3;
 }
 main .grid-container .item4 h3 {
-    font-size: 15px;
+    font-size: 13px;
     color: #174069;
+    padding: 7px 15px;
     font-weight: 600;
+    letter-spacing: -0.075em;
     line-height: 22px;
     text-align: center;
 }
 main .grid-container .item4 img {
     width: 100%;
-    height: 219px;
+    height: 210px;
     box-sizing: border-box;
-    padding-top: 7px;
 }
 /* item5 */
 main .grid-container .item5 {
     display: table;
     z-index: 2;
     grid-row: 6;
+    width: 100%;
 }
 main .grid-container .item5 .quick-banner {
     display: table;
     width: 100%;
 }
 main .grid-container .item5 .quick-banner li {
-    display: table-cell;
-    width: 20%;
+    display: block;
+    width: 100%;
+    margin-top: 1px;
 }
 main .grid-container .item5 .quick-banner li a {
     text-decoration: none;
-    padding: 8px;
+    padding-left: 48px;
     display: block;
-    height: 96px;
+    height: 37px;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -739,7 +736,6 @@ main .grid-container .item5 .quick-banner li span {
     font-weight: 500;
     color: #fff;
     letter-spacing: -0.075em;
-    word-break: keep-all;
 }
 main .grid-container .item5 .quick-banner li span em {
     color: #ffeb99;
@@ -802,7 +798,7 @@ main .grid-container .item6 #slider .slide4 {
 }
 main .grid-container .item6 #slider .slide-content {
     width: 100%;
-    height: 336px;
+    height: 225.86px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -854,7 +850,167 @@ main .grid-container .item6 #slider .dots .dot1 {
 /* item6-5 */
 main .grid-container .item6-5 {
     grid-row: 5;
-    display: none;
+}
+main .grid-container .item6-5 .container-list2 {
+    margin-top: 6px;
+}
+main .grid-container .item6-5 .container-list2 .region2 {
+    border-radius: 14px;
+    box-sizing: border-box;
+    font-size: 0px;
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+main .grid-container .item6-5 .container-list2 .region2 span {
+    color: #164068;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+main .grid-container .item6-5 .container-list2 .region2 em {
+    color: #778898;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    padding-left: 6px;
+}
+main .grid-container .item6-5 .graph-detail {
+    margin-top: 30px;
+    background: #fff;
+    border-top: 4px solid #164068;
+    padding: 12px 16px;
+    box-sizing: border-box;
+}
+main .grid-container .item6-5 .chart {
+    padding: 0 auto;
+    top: 31px;
+    width: 100%;
+    height: 405px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid #164068;
+    position: relative;
+    box-sizing: border-box;
+}
+main .grid-container .item6-5 #graph2 {
+    width: 500px;
+    height: 100%;
+}
+main .grid-container .item6-5 .graph-detail .chart {
+    padding: 0 auto;
+    width: 100%;
+    height: 170px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 0;
+}
+main .grid-container .item6-5 .graph-detail #graph3 {
+    height: 100%;
+    width: 270px;
+}
+main .grid-container .item6-5 .graph-detail h3 .title {
+    padding-left: 15%;
+    color: #333;
+    line-height: 20px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+main .grid-container .item6-5 .graph-detail .help {
+    display: inline-block;
+    margin-left: 4px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    background-color: #006766;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 50%;
+}
+main .grid-container .item6-5 .graph-detail h4 {
+    position: absolute;
+    top: 2110px;
+    left: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    padding: 18px;
+}
+main .grid-container .item6-5 .graph-detail .title {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #333;
+    line-height: 20px;
+}
+main .grid-container .item6-5 .graph-detail ul {
+    width: 100%;
+    margin-top: 50px;
+}
+main .grid-container .item6-5 .graph-detail ul li {
+    display: table;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+main .grid-container .item6-5 .graph-detail ul li .tit {
+    display: table-cell;
+    width: 50%;
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #444;
+    font-weight: 500;
+}
+main .grid-container .item6-5 .graph-detail ul li .num {
+    text-align: right;
+    display: table-cell;
+    width: 50%;
+    padding: 3px 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: -2px;
+}
+main .grid-container .item6-5 .graph-detail ul li .num em {
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    margin-left: 4px;
+}
+main .grid-container .item6-5 .graph-detail .sub-tit {
+    color: #0097c7;
+    margin-right: 4px;
+    font-size: 12px;
+    line-height: 1px;
+    width: 50%;
+    padding: 3px 0;
+    font-weight: 500;
+}
+main .grid-container .item6-5 .graph-detail .sub-num {
+    color: #0097c7;
+    font-weight: 500;
+    margin-right: 4px;
+    font-size: 12px;
+    line-height: 1px;
+    text-align: right;
+    display: table-cell;
+    width: 50%;
+    padding: 3px 0;
+    margin-bottom: -2px;
+}
+main .grid-container .item6-5 .graph-detail .core {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
 }
 /* item7 */
 main .grid-container .item7 {
@@ -950,42 +1106,52 @@ main .grid-container .item8 .title-list {
 /* contanier-main */
 main .contanier-main {
     background-color: white;
-    display: none;
+    height: 1130px;
+    padding-bottom: 70px;
 }
 main .contanier-main > div {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
-    padding: 24px;
-    padding-bottom: 48px;
+    padding: 16px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
 }
 main .contanier-main h3 {
     position: relative;
     display: block;
-    padding: 10px;
-    width: 20%;
-    height: 100%;
+    padding: 14px 20px;
+    width: 100%;
+    height: 70px;
     background-color: #18407d;
-    display: inline-block;
     color: #d1ffff;
+    box-sizing: border-box;
 }
 main .contanier-main h3 .info {
     display: none;
 }
 main .contanier-main h3 .txt {
-    font-size: 17px;
+    font-size: 14px;
+    text-align: center;
     line-height: 1.5em;
     font-weight: 600;
+    display: block;
+}
+main .contanier-main h3 .txt br:nth-child(1) {
+    display: none;
+}
+main .contanier-main h3 .txt br:nth-child(3) {
+    display: none;
 }
 main .contanier-main ul {
-    float: right;
-    width: 75%;
-    padding: 14px;
+    width: 100%;
     background-color: #ccc;
 }
 main .contanier-main ul li {
-    margin-left: 1.333%;
-    width: 32%;
+    width: 100%;
+    height: 338px;
+    padding: 5px 30px;
     background-color: #ddd;
+    box-sizing: border-box;
 }
 main .contanier-main ul li img {
     height: 100%;
@@ -997,61 +1163,74 @@ main .contanier-main ul li a {
 /* footer */
 footer {
     width: 100%;
-    border-top: 3px solid #333;
     background: #f8f8f8;
+    border-top: 3px solid #333;
 }
 /* footer-secondary */
 footer .footer-secondary > div {
     width: 100%;
-    margin: 0 auto;
+    height: 98px;
+    border-bottom: 1px solid #ddd;
 }
 footer .footer-secondary ul.footer-main {
     position: relative;
-    display: flex;
-    flex-grow: 1;
+    width: 100%;
 }
-footer .footer-secondary ul.footer-main li {
+footer .footer-secondary ul.footer-main li.item {
     position: relative;
     float: left;
-    display: block;
     padding: 12px 0;
 }
-footer .footer-secondary ul.footer-main li:first-child {
+footer .footer-secondary ul.footer-main li:nth-child(1) {
     width: 50%;
     border-right: 1px solid #ddd;
+    box-sizing: border-box;
 }
 footer .footer-secondary ul.footer-main li:nth-child(2) {
     width: 50%;
 }
 footer .footer-secondary ul.footer-main li:nth-child(3) {
-    width: 50%;
+    width: 100%;
     border-top: 1px solid #ddd;
 }
 footer .footer-secondary ul.footer-main li.item .item-title {
     display: block;
-    padding: 0 48px 0 16px;
-    align-items: center;
+    position: relative;
     cursor: pointer;
+    padding: 0 48px 0 16px;
 }
 footer .footer-secondary ul.footer-main li.item .item-title:hover {
     transition: .4s;
 }
 footer .footer-secondary ul.footer-main li.item .item-title .item-name {
+    display: inline-block;
     font-size: 13px;
     line-height: 14px;
+    letter-spacing: -0.048em;
+    color: #000;
     padding: 5px 0;
     padding-right: 4px;
 }
+footer .footer-secondary ul.footer-main li.item .item-title .item-name em {
+    display: none;
+}
 footer .footer-secondary ul.footer-main li.item .item-title .material-icons {
-    padding-left: 5px;
+    position: absolute;
     color: #666;
+    margin: 0 12px;
+    right: 0;
 }
 footer .footer-secondary ul.footer-main li.item .item-title .arrow-down {
     display: none;
-    padding-left: 5px;
+    position: absolute;
+    margin: 0 12px;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
 }
 footer .footer-secondary ul.footer-main li.item .item-contents {
     position: absolute;
+    left: 16px;
     bottom: 40px;
     color: #666;
     background: #fff;
@@ -1092,14 +1271,10 @@ footer .footer-secondary ul.footer-main li.item .item-contents>ul li:hover {
     transition: .4s;
 }
 /* footer-primary */
-footer .footer-primary {
-    border-top: 1px solid #ddd;
-}
 footer .footer-primary > div {
     width: 100%;
-    height: 117px;
-    margin: 0 auto;
-    padding: 24px 0 48px 0;
+    min-height: 80px;
+    padding: 16px 16px 32px 16px;
     box-sizing: border-box;
 }
 footer .footer-primary .f-left {
@@ -1107,13 +1282,20 @@ footer .footer-primary .f-left {
     font-size: 13px;
     color: #222222;
     float: left;
+    width: 78%;
+}
+footer .footer-primary .f-left ul {
+    text-align: left;
+    font-size: 0;
+    line-height: 0;
 }
 footer .footer-primary .f-left li {
-    float: left;
-    padding: 0 12px;
-    letter-spacing: -0.048em;
+    padding: 6px;
+    display: inline-block;
+    font-size: 13px;
     line-height: 14px;
-    border-right: 1px solid #ddd;
+    letter-spacing: -0.048em;
+    color: #222;
 }
 footer .footer-primary .f-left li:first-child {
     font-size: 13px;
@@ -1121,20 +1303,26 @@ footer .footer-primary .f-left li:first-child {
     font-weight: bold;
     padding-left: 0;
 }
+footer .footer-primary .copyright {
+    margin-top: 4px;
+}
 footer .footer-primary .copyright p {
     font-size: 12px;
     line-height: 19px;
     color: #666;
-    margin-top: 25px;
+    padding-left: 6px;
+    text-align: left;
+    display: block;
 }
 footer .footer-primary .f-right {
+    display: block;
     width: 56px;
     height: 40px;
     background: url(../images/mark_open.png) no-repeat 0 center;
-    margin-top: -10px;
     float: right;
     text-align: right;
     cursor: pointer;
+    margin-right: 7%;
 }
 .btn-scrollToTop {
     position: fixed;

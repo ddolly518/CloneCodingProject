@@ -50,110 +50,6 @@ menuCloseEl2.addEventListener("click", function() {
     sideMenuEl2.style.transform = 'translateX(-100%)'
 })
 
-// mobile-header item2
-// 여는 아이콘 선택자
-const menuOpen = document.getElementById('liveopenBtn2')
-// 닫는 아이콘 선택자
-const menuClose = document.getElementById('livecloseBtn2')
-// 사이드 네비게이션 선택자
-const sideMenu = document.getElementById('item2')
-// 여는 아이콘에 클릭 이벤트가 발생하면,
-menuOpen.addEventListener("click", function() {
-    // 여는 아이콘을 보이지 않게 처리하고,
-    menuOpen.style.display = 'none'
-    // 닫는 아이콘은 보이게 처리합니다
-    menuClose.style.display = 'block'
-    // 사이드 메뉴를 보이게 합니다 
-    sideMenu.style.display = 'block'
-})
-// 닫는 아이콘에 클릭 이벤트가 발생하면,
-menuClose.addEventListener("click", function() {
-    // 여는 아이콘을 보이게 처리하고,
-    menuOpen.style.display = 'block'
-    // 닫는 아이콘은 보이지 않게 처리합니다
-    menuClose.style.display = 'none'
-    // 사이드 메뉴를 보이지 않게 처리합니다
-    sideMenu.style.display = 'none'
-})
-
-// mobile-header item3
-// 여는 아이콘 선택자
-const menuOpen = document.getElementById('liveopenBtn3')
-// 닫는 아이콘 선택자
-const menuClose = document.getElementById('livecloseBtn3')
-// 사이드 네비게이션 선택자
-const sideMenu = document.getElementById('item3')
-// 여는 아이콘에 클릭 이벤트가 발생하면,
-menuOpen.addEventListener("click", function() {
-    // 여는 아이콘을 보이지 않게 처리하고,
-    menuOpen.style.display = 'none'
-    // 닫는 아이콘은 보이게 처리합니다
-    menuClose.style.display = 'block'
-    // 사이드 메뉴를 보이게 합니다 
-    sideMenu.style.display = 'block'
-})
-// 닫는 아이콘에 클릭 이벤트가 발생하면,
-menuClose.addEventListener("click", function() {
-    // 여는 아이콘을 보이게 처리하고,
-    menuOpen.style.display = 'block'
-    // 닫는 아이콘은 보이지 않게 처리합니다
-    menuClose.style.display = 'none'
-    // 사이드 메뉴를 보이지 않게 처리합니다
-    sideMenu.style.display = 'none'
-})
-
-// mobile-header item4
-// 여는 아이콘 선택자
-const menuOpen = document.getElementById('liveopenBtn4')
-// 닫는 아이콘 선택자
-const menuClose = document.getElementById('livecloseBtn4')
-// 사이드 네비게이션 선택자
-const sideMenu = document.getElementById('item4')
-// 여는 아이콘에 클릭 이벤트가 발생하면,
-menuOpen.addEventListener("click", function() {
-    // 여는 아이콘을 보이지 않게 처리하고,
-    menuOpen.style.display = 'none'
-    // 닫는 아이콘은 보이게 처리합니다
-    menuClose.style.display = 'block'
-    // 사이드 메뉴를 보이게 합니다 
-    sideMenu.style.display = 'block'
-})
-// 닫는 아이콘에 클릭 이벤트가 발생하면,
-menuClose.addEventListener("click", function() {
-    // 여는 아이콘을 보이게 처리하고,
-    menuOpen.style.display = 'block'
-    // 닫는 아이콘은 보이지 않게 처리합니다
-    menuClose.style.display = 'none'
-    // 사이드 메뉴를 보이지 않게 처리합니다
-    sideMenu.style.display = 'none'
-})
-
-// mobile-header item6-5
-// 여는 아이콘 선택자
-const menuOpen = document.getElementById('liveopenBtn6-5')
-// 닫는 아이콘 선택자
-const menuClose = document.getElementById('livecloseBtn6-5')
-// 사이드 네비게이션 선택자
-const sideMenu = document.getElementById('item6-5')
-// 여는 아이콘에 클릭 이벤트가 발생하면,
-menuOpen.addEventListener("click", function() {
-    // 여는 아이콘을 보이지 않게 처리하고,
-    menuOpen.style.display = 'none'
-    // 닫는 아이콘은 보이게 처리합니다
-    menuClose.style.display = 'block'
-    // 사이드 메뉴를 보이게 합니다 
-    sideMenu.style.display = 'block'
-})
-// 닫는 아이콘에 클릭 이벤트가 발생하면,
-menuClose.addEventListener("click", function() {
-    // 여는 아이콘을 보이게 처리하고,
-    menuOpen.style.display = 'block'
-    // 닫는 아이콘은 보이지 않게 처리합니다
-    menuClose.style.display = 'none'
-    // 사이드 메뉴를 보이지 않게 처리합니다
-    sideMenu.style.display = 'none'
-})
-
 // SCROLL TO TOP
 const scrollToTop = () => {
     window.scroll({top: 0, left: 0, behavior: 'smooth'});
@@ -174,6 +70,10 @@ window.addEventListener("scroll", function() {
 // popAlert
 const popAlert = () => {
     alert('확진 판정을 받은 후 의료기관이나 생활치료센터 등에 격리되어 치료를 받고 있는 환자')
+}
+// popAlert2
+const popAlert2 = () => {
+  alert('발생률 : 지역별 인구 출처-행정안전부, 주민등록인구 현황(20.1월 기준)')
 }
 
 // 슬라이드 이미지들 선택자

@@ -276,9 +276,6 @@ main .grid-container {
 main .grid-container .item6-5 {
     display: none;
 }
-main .grid-container .button {
-    display: none;
-}
 /* item1 */
 /* datalist */
 main .grid-container .item1 {
@@ -659,14 +656,20 @@ main .grid-container .item3 .info-core li .core {
     font-weight: 400;
 }
 main .grid-container .item3 .chart {
-    padding: 0 200px;
+    /* padding: 0 200px; */
     box-sizing: border-box;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     width: 64.7%;
     height: 184px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main .grid-container .item3 img {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 184px;
     top: 205px;
 }

@@ -287,9 +287,6 @@ main .grid-container {
 main .grid-container .item6-5 {
     display: none;
 }
-main .grid-container .button {
-    display: none;
-}
 /* item1 */
 /* datalist */
 main .grid-container .item1 .datalist ul {
@@ -716,24 +713,24 @@ main .grid-container .item5 .quick-banner li span {
 main .grid-container .item5 .quick-banner li span em {
     color: #ffeb99;
 }
-main .grid-container .item5 .quick-banner li span img {
+main .grid-container .item5 .quick-banner li img {
     width: 36px;
     height: 24px;
     color: #fff;
 }
-main .grid-container .item5 .quick-banner li:first-child a {
+main .grid-container .item5 .quick-banner li:first-child {
     background: linear-gradient(to right, #4568aa, #1b336f 70%);
 }
-main .grid-container .item5 .quick-banner li:nth-child(2) a {
+main .grid-container .item5 .quick-banner li:nth-child(2) {
     background: #199b0f;
 }
-main .grid-container .item5 .quick-banner li:nth-child(3) a {
+main .grid-container .item5 .quick-banner li:nth-child(3) {
     background: #006666;
 }
-main .grid-container .item5 .quick-banner li:nth-child(4) a {
+main .grid-container .item5 .quick-banner li:nth-child(4) {
     background: #006699;
 }
-main .grid-container .item5 .quick-banner li:nth-child(5) a {
+main .grid-container .item5 .quick-banner li:nth-child(5) {
     background: #3889cb;
 }
 /* item6 */
