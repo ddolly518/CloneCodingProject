@@ -2,6 +2,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #EEEFEF;
 }
+/* header */
 header .desktop-header {
     display: none;
 }
@@ -231,6 +232,7 @@ main {
     padding-top: 5px;
     box-sizing: border-box;
 }
+/* banner */
 main .embanner {
     width: 80%;
     height: 94px;
@@ -255,7 +257,7 @@ main .embanner > div img {
     width: 770px;
     height: 92px;
 }
-/* grid-container */
+/* grid-container Layout */
 main .grid-container {
     display: grid;
     grid-template-columns: 48% 48%;

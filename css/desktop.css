@@ -4,6 +4,7 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+/* header */
 header .tablet-header {
     display: none;
 }
@@ -262,6 +263,7 @@ main {
     padding-top: 5px;
     box-sizing: border-box;
 }
+/* banner */
 main .embanner {
     width: 1180px;
     height: 85px;
@@ -282,7 +284,7 @@ main .embanner > div img {
     width: 100%;
     height: 100%;
 }
-/* grid-container */
+/* grid-container Layout */
 main .grid-container {
     display: grid;
     grid-template-columns: 480px 340px 333px;

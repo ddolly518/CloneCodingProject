@@ -1,4 +1,4 @@
-// desktop-header and tablet-header
+// tablet-header nav
 // 여는 아이콘 선택자
 const menuOpenEl = document.getElementById('btn-open')
 // 닫는 아이콘 선택자
@@ -24,7 +24,7 @@ menuCloseEl.addEventListener("click", function() {
     sideMenuEl.style.transform = 'translateX(-100%)'
 })
 
-// mobile-header
+// mobile-header nav
 // 여는 아이콘 선택자
 const menuOpenEl2 = document.getElementById('btn--open')
 // 닫는 아이콘 선택자
