@@ -721,25 +721,33 @@ main .grid-container .item5 .quick-banner li {
 }
 main .grid-container .item5 .quick-banner li a {
     text-decoration: none;
-    padding-left: 48px;
+    padding: 8px 38px 8px 8px;
     display: block;
     height: 37px;
     cursor: pointer;
     box-sizing: border-box;
 }
+main .grid-container .item5 .quick-banner li a br {
+    display: none;
+}
 main .grid-container .item5 .quick-banner li span {
-    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    font-size: 13px;
     line-height: 17px;
     font-weight: 500;
     color: #fff;
+    vertical-align: middle;
     letter-spacing: -0.075em;
+    margin-left: 38px;
 }
 main .grid-container .item5 .quick-banner li span em {
     color: #ffeb99;
 }
-main .grid-container .item5 .quick-banner li span img {
+main .grid-container .item5 .quick-banner li img {
+    position: absolute;
     width: 36px;
-    height: 24px;
+    height: 25px;
     color: #fff;
 }
 main .grid-container .item5 .quick-banner li:first-child a {

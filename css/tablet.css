@@ -679,9 +679,6 @@ main .grid-container .item3 .chart {
     height: 184px;
     text-align: center;
 }
-main .grid-container .item3 img {
-    /* position: absolute; */
-}
 /* item4 */
 main .grid-container .item4 {
     border-top: 4px solid #164068;
@@ -706,7 +703,6 @@ main .grid-container .item4 img {
 }
 /* item5 */
 main .grid-container .item5 {
-    grid-column: 1 / span 3;
     display: table;
     z-index: 2;
     grid-column: 1 / span 2;
@@ -722,6 +718,7 @@ main .grid-container .item5 .quick-banner li {
 }
 main .grid-container .item5 .quick-banner li a {
     text-decoration: none;
+    position: relative;
     padding: 8px;
     display: block;
     height: 96px;
@@ -729,20 +726,36 @@ main .grid-container .item5 .quick-banner li a {
     box-sizing: border-box;
 }
 main .grid-container .item5 .quick-banner li span {
-    font-size: 15px;
-    line-height: 17px;
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
     font-weight: 500;
     color: #fff;
     letter-spacing: -0.075em;
-    word-break: keep-all;
+    padding-left: 48px;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    margin-top: -13px;
+}
+main .grid-container .item5 .quick-banner li:nth-child(1) span {
+    margin-top: -18px;
+}
+main .grid-container .item5 .quick-banner li:nth-child(4) span {
+    margin-top: -18px;
 }
 main .grid-container .item5 .quick-banner li span em {
     color: #ffeb99;
 }
-main .grid-container .item5 .quick-banner li span img {
+main .grid-container .item5 .quick-banner li img {
+    display: block;
     width: 36px;
     height: 24px;
     color: #fff;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    margin-top: -13px;
 }
 main .grid-container .item5 .quick-banner li:first-child a {
     background: linear-gradient(to right, #4568aa, #1b336f 70%);

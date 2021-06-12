@@ -118,10 +118,11 @@ header .header-primary {
 header .header-primary > div {
     width: 1180px;
     margin: 0 auto;
-    float: right;
 }
 header .header-primary ul.gnb {
     float: left;
+    width: 1180px;
+    margin: 0 auto;
 }
 header .header-primary ul.gnb li {
     margin-bottom: -1px;
@@ -135,7 +136,8 @@ header .header-primary ul.gnb li .item-title a {
     cursor: pointer;
     position: relative;
     display: block;
-    padding: 20px 15px;
+    padding: 15.5px 10px;
+    margin: 5px;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
@@ -145,44 +147,35 @@ header .header-primary ul.gnb li .item-title a {
 header .header-primary ul.gnb li .item-title:hover {
     transition: .4s;
 }
-header .header-primary ul.gnb li .item-title .gnb-name {}
 header .header-primary ul.gnb li .gnb-contents {
     display: none;
-    height: 88px;
-    padding-top: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
     position: absolute;
     left: 0;
     width: 100%;
     z-index: 15;
-    overflow: hidden;
     background: #fff;
     border-bottom: 3px solid #007499;
+}
+header .header-primary ul.gnb li:hover a {
+    border-bottom: 4px solid #0d427f;
 }
 header .header-primary ul.gnb li:hover .gnb-contents {
     display: block;
 }
 header .header-primary ul.gnb li .gnb-contents > ul {
-    width: 1180px;
-    margin: 0 auto;
     background: #fff;
-    padding: 16px 24px;
+    padding: 16px 12.5%;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 header .header-primary ul.gnb li .gnb-contents > ul li {
     transition: .4s;
     float: left;
-    width: 20%;
+    width: 17%;
     padding: 8px;
-    height: 5px;
-    background: #0d427f;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    transform: scaleX(0);
-    transform-origin: right bottom;
-    transition: transform 0.24s ease-in-out;
+    position: relative;
+    margin-bottom: 16px;
 }
 header .header-primary ul.gnb li .gnb-contents > ul li:hover {
     transition: .4s;
@@ -191,16 +184,23 @@ header .header-primary ul.gnb li .gnb-contents > ul li a {
     cursor: pointer;
     text-decoration: none;
     display: block;
+    height: 40px;
     font-size: 15px;
-    line-height: 21px;
+    line-height: 24px;
     font-weight: 500;
     letter-spacing: -0.064em;
     color: #fff;
-    padding: 8px 16px;
-    background: #13669b;
+    padding: 6px 12px;
+    background-color:#006699;
+    border-bottom: 0;
+    box-sizing: border-box;
+}
+header .header-primary ul.gnb li .gnb-contents > ul li:hover a {
+    background-color: #0B9BC9;
 }
 /* search */
 header .header-primary .search {
+    position: relative;
     outline: none;
     float: right;
     padding-top: 12px;
@@ -211,14 +211,12 @@ header .header-primary .search input {
     border: 1px solid #0B9BC9;
     outline: none;
     padding: 4px 10px;
-    margin-right: 36px;
-    width: 210px;
+    width: 246px;
     height: 36px;
     border-color: #e7e7e7;
     font-size: 14px;
     position: absolute;
     right: 0;
-    top: -45px;
     transition: .4s;
     background: white;
     box-sizing: border-box;
@@ -732,6 +730,7 @@ main .grid-container .item5 .quick-banner li {
 }
 main .grid-container .item5 .quick-banner li a {
     text-decoration: none;
+    position: relative;
     padding: 8px;
     display: block;
     height: 96px;
@@ -739,20 +738,34 @@ main .grid-container .item5 .quick-banner li a {
     box-sizing: border-box;
 }
 main .grid-container .item5 .quick-banner li span {
+    display: block;
     font-size: 15px;
-    line-height: 17px;
+    line-height: 18px;
     font-weight: 500;
     color: #fff;
     letter-spacing: -0.075em;
-    word-break: keep-all;
+    position: relative;
+    top: 36%;
+    margin-left: 60px;
+}
+main .grid-container .item5 .quick-banner li:first-child span {
+    top: 25%;
+}
+main .grid-container .item5 .quick-banner li:nth-child(4) span {
+    top: 25%;
 }
 main .grid-container .item5 .quick-banner li span em {
     color: #ffeb99;
 }
 main .grid-container .item5 .quick-banner li img {
+    display: block;
     width: 36px;
     height: 24px;
     color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -13px;
 }
 main .grid-container .item5 .quick-banner li:first-child {
     background: linear-gradient(to right, #4568aa, #1b336f 70%);
