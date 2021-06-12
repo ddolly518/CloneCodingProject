@@ -13,11 +13,10 @@ header .mobile-header {
 header {
     background-color: white;
     width: 100%;
-    height: 123px;
+    height: 120px;
     font-family: 'Noto Sans KR', '맑은고딕', 'Malgun Gothic', '돋움', 'Dotum', sans-serif;
     font-weight: 400;
     letter-spacing: -0.024em;
-    overflow-x: hidden;
 }
 /* header-secondary*/
 header .header-secondary {
@@ -114,51 +113,53 @@ header .header-primary {
     background-color: #0B9BC9;
     position: relative;
     border-bottom: 1px solid #ddd;
+    height: 60px;
 }
 header .header-primary > div {
     width: 1180px;
     margin: 0 auto;
+    float: right;
 }
 header .header-primary ul.gnb {
-    position: relative;
-    display: flex;
-    flex-grow: 1;
+    float: left;
 }
 header .header-primary ul.gnb li {
-    position: relative;
-    display: block;
+    margin-bottom: -1px;
+    float: left;
 }
 header .header-primary ul.gnb li .item-title {
-    display: flex;
-    align-items: center;
     transition: .4s;
-    cursor: pointer;
 }
 header .header-primary ul.gnb li .item-title a {
     text-decoration: none;
+    cursor: pointer;
     position: relative;
+    display: block;
     padding: 20px 15px;
     font-weight: 500;
+    font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.07em;
     color: #fff;
 }
 header .header-primary ul.gnb li .item-title:hover {
-    color: #F6F5F0;
     transition: .4s;
 }
-header .header-primary ul.gnb li .item-title .gnb-name {
-    font-size: 18px;
-}
+header .header-primary ul.gnb li .item-title .gnb-name {}
 header .header-primary ul.gnb li .gnb-contents {
-    position: absolute;
-    top: 55px;
-    color: #000;
-    width: 100%;
-    font-size: 18px;
-    font-weight: 500;
-    box-sizing: border-box;
     display: none;
+    height: 88px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 3px solid #007499;
 }
 header .header-primary ul.gnb li:hover .gnb-contents {
     display: block;
@@ -170,24 +171,40 @@ header .header-primary ul.gnb li .gnb-contents > ul {
     padding: 16px 24px;
 }
 header .header-primary ul.gnb li .gnb-contents > ul li {
-    padding: 8px;
     transition: .4s;
     float: left;
     width: 20%;
+    padding: 8px;
+    height: 5px;
+    background: #0d427f;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transform: scaleX(0);
+    transform-origin: right bottom;
+    transition: transform 0.24s ease-in-out;
 }
 header .header-primary ul.gnb li .gnb-contents > ul li:hover {
-    padding: 5px 25px;
     transition: .4s;
-    background: #1107ff;
-    color: #07FF11;
+}
+header .header-primary ul.gnb li .gnb-contents > ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
+    letter-spacing: -0.064em;
+    color: #fff;
+    padding: 8px 16px;
+    background: #13669b;
 }
 /* search */
 header .header-primary .search {
     outline: none;
-    right: 10px;
-    display: flex;
+    float: right;
+    padding-top: 12px;
     align-items: center;
-    position: relative;
     border: 1px solid #0B9BC9;
 }
 header .header-primary .search input {
@@ -615,11 +632,14 @@ main .grid-container .item2 .container-list2 .region2 em {
 main .grid-container .item3 {
     border-top: 4px solid #164068;
     background-color: #EAFDFF;
+    display: table;
 }
 main .grid-container .item3 .livetest {
-    width: 50%;
-    padding: 10px 10px 0 10px;
+    width: 40%;
+    padding: 15px 10px 0 10px;
     box-sizing: border-box;
+    display: table-cell;
+    vertical-align: top;
 }
 main .grid-container .item3 h3 {
     color: #174069;
@@ -636,29 +656,45 @@ main .grid-container .item3 .info-core {
 main .grid-container .item3 .info-core li {
     font-size: 16px;
     padding: 5px 0;
-    display: inline;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
 }
 main .grid-container .item3 .info-core li .tit {
     color: #666666;
     font-size: 13px;
     font-weight: 600;
+    letter-spacing: -0.075em;
+    display: table-cell;
+    width: 47%;
+    line-height: 22px;
 }
 main .grid-container .item3 .info-core li .num {
-    color: #174069;
     font-size: 16px;
     font-weight: 600;
+    text-align: right;
+    display: table-cell;
+    width: 53%;
+    line-height: 22px;
+    color: #174069;
 }
 main .grid-container .item3 .info-core li .core {
-    font-size: 12px;
+    display: block;
+    font-size: 11px;
     color: #000000;
     font-weight: 400;
+    line-height: 20px;
+}
+main .grid-container .item3 .chart {
+    width: 60%;
+    text-align: center;
+    display: table-cell;
 }
 main .grid-container .item3 img {
-    width: 275px;
     height: 180px;
-    position: absolute;
     top: 220px;
-    margin-left: 205px;
 }
 /* item4 */
 main .grid-container .item4 {

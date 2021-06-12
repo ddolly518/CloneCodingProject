@@ -613,65 +613,74 @@ main .grid-container .item3 {
     grid-row: 2;
     background: white;
     height: 184px;
+    display: table;
 }
 main .grid-container .item3 .livetest {
     width: 30%;
-    padding: 10px 10px 0 10px;
+    padding: 15px 10px 20px 10px;
     box-sizing: border-box;
     background-color: #eafdff;
     height: 184px;
+    display: table-cell;
+    vertical-align: top;
 }
 main .grid-container .item3 h3 {
     color: #174069;
     font-size: 15px;
     padding-right: 16px;
+    padding-left: 16px;
+    letter-spacing: -0.075em;
     font-weight: 600;
     line-height: 22px;
     text-align: center;
 }
 main .grid-container .item3 .info-core {
-    width: 100%;
     padding-top: 15px;
 }
 main .grid-container .item3 .info-core li {
     font-size: 16px;
     padding: 5px 0;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
 }
 main .grid-container .item3 .info-core li .tit {
     color: #666666;
     font-size: 13px;
     font-weight: 600;
+    letter-spacing: -0.075em;
+    display: table-cell;
     width: 50%;
+    padding: 3px 0;
+    line-height: 12px;
 }
 main .grid-container .item3 .info-core li .num {
-    color: #174069;
     font-size: 16px;
     font-weight: 600;
-    width: 50%;
     text-align: right;
+    display: table-cell;
+    width: 50%;
+    padding: 3px 0;
+    line-height: 12px;
+    color: #174069;
+    margin-bottom: -2px;
 }
 main .grid-container .item3 .info-core li .core {
     font-size: 12px;
     color: #000000;
     font-weight: 400;
+    line-height: 12px;
 }
 main .grid-container .item3 .chart {
-    /* padding: 0 200px; */
-    box-sizing: border-box;
-    /* margin-left: 5%; */
-    width: 64.7%;
+    width: 70%;
+    display: table-cell;
     height: 184px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 main .grid-container .item3 img {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 184px;
-    top: 205px;
+    /* position: absolute; */
 }
 /* item4 */
 main .grid-container .item4 {
